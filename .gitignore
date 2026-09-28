@@ -1,0 +1,27 @@
+# Сборки и зависимости
+node_modules/
+dist/
+build/
+.next/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Конфигурации IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Окружение
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+docs/
