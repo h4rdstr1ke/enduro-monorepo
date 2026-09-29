@@ -1,0 +1,1 @@
+export { MotorcyclePage } from './ui/motorcycle-page'

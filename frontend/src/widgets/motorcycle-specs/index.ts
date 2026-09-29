@@ -1,0 +1,1 @@
+export { MotorcycleSpecs } from './ui/motorcycle-specs';
