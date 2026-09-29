@@ -19,9 +19,22 @@ export default function RootLayout({
         <AntdRegistry>
           <ConfigProvider
             theme={{
+              cssVar: { key: 'enduro' }, 
+              hashed: false,             
               token: {
-                colorPrimary: "#fa8c16", 
+                colorPrimary: "#fa8c16",
+                colorLink: "#fa8c16",
+                colorLinkHover: "#d46b08",
                 borderRadius: 6,
+              },
+              components: {
+                Card: {
+                  paddingMD: 20,
+                },
+                Tag: {
+                  defaultColor: "#fa8c16",
+                  defaultBg: "#fff7e6",
+                }
               },
             }}
           >

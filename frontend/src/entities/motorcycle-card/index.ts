@@ -1,0 +1,1 @@
+export { MotorcycleCard } from './ui/motorcycle-card';
