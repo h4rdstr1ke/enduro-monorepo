@@ -6,7 +6,7 @@ import { EncyclopediaGrid } from "@/widgets/encyclopedia-grid";
 
 export default function Home() {
   return (
-    <main style={{ backgroundColor: '#fafafa', minHeight: '100vh', padding: '0 24px' }}>
+    <main style={{padding: '0 24px' }}>
       <EncyclopediaGrid />
     </main>
   );

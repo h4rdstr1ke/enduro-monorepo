@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-import { ConfigProvider } from "antd";
+import { ConfigProvider } from "antd"; 
+import { Header } from "@/widgets/header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Enduro Catalog",
-  description: "Каталог эндуро мотоциклов",
+  title: "Enduro helper",
+  description: "Помощник в мире эндуро",
 };
 
 export default function RootLayout({
@@ -34,11 +35,16 @@ export default function RootLayout({
                 Tag: {
                   defaultColor: "#fa8c16",
                   defaultBg: "#fff7e6",
-                }
+                },
               },
             }}
           >
-            {children}
+            <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+              <Header />
+              <main style={{ flex: 1, backgroundColor: '#fafafa' }}>
+                {children}
+              </main>
+            </div>
           </ConfigProvider>
         </AntdRegistry>
       </body>
