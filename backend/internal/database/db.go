@@ -10,7 +10,7 @@ import (
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 
-	"github.com/h4rdstr1ke/enduro-backend/internal/models"
+	"github.com/h4rdstr1ke/enduro-monorepo/backend/internal/models"
 )
 
 func Connect() (*gorm.DB, error) {
@@ -32,7 +32,7 @@ func Connect() (*gorm.DB, error) {
 		return nil, fmt.Errorf("ошибка подключения к БД: %w", err)
 	}
 
-	if err := db.AutoMigrate(&models.Brand{}, &models.Motorcycle{}, &models.Spec{}); err != nil {
+	if err := db.AutoMigrate(&models.Brand{}, &models.Motorcycle{}, &models.Spec{}, &models.PriceAnalytics{}); err != nil {
 		return nil, fmt.Errorf("ошибка автомиграции: %w", err)
 	}
 

@@ -4,8 +4,8 @@ package main
 import (
 	"log"
 
-	"github.com/h4rdstr1ke/enduro-backend/internal/database"
-	"github.com/h4rdstr1ke/enduro-backend/internal/scraper"
+	"github.com/h4rdstr1ke/enduro-monorepo/backend/internal/database"
+	"github.com/h4rdstr1ke/enduro-monorepo/backend/internal/scraper"
 )
 
 func main() {

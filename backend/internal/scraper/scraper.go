@@ -13,7 +13,7 @@ import (
 	"github.com/gocolly/colly/v2"
 	"gorm.io/gorm"
 
-	"github.com/h4rdstr1ke/enduro-backend/internal/models"
+	"github.com/h4rdstr1ke/enduro-monorepo/backend/internal/models"
 )
 
 // Scraper предоставляет методы для обхода страниц и сохранения данных в БД.
