@@ -1,50 +1,52 @@
 "use client";
 
-import { Breadcrumb, Flex, Typography, Select, Row, Col } from "antd";
-import { MotorcycleCard } from "@/entities/motorcycle-card";
+import { Card, Col, Row, Typography, Tag, Flex } from "antd";
+import Link from "next/link";
+import type { Motorcycle } from "@/shared/ui/types"; 
 
-const { Text } = Typography;
+const { Title, Text } = Typography;
 
-// Моковые данные для проверки верстки
-const MOCK_DATA = [
-  { id: 1, title: "Kayo K1 250 MX", image: "https://placehold.co/400x300?text=Kayo+K1", engineCapacity: "250 куб.см", power: "21 л.с.", rating: 4.5, reviewsCount: 23 },
-  { id: 2, title: "BSE Z5 300", image: "https://placehold.co/400x300?text=BSE+Z5", engineCapacity: "300 куб.см", power: "27 л.с.", rating: 4.5, reviewsCount: 23 },
-  { id: 3, title: "GR7 F250A", image: "https://placehold.co/400x300?text=GR7", engineCapacity: "250 куб.см", power: "21 л.с.", rating: 4.5, reviewsCount: 23 },
-  { id: 4, title: "ZUUMAV FX 250", image: "https://placehold.co/400x300?text=ZUUMAV", engineCapacity: "250 куб.см", power: "21 л.с.", rating: 4.5, reviewsCount: 23 },
-  { id: 5, title: "Avantis Enduro 250", image: "https://placehold.co/400x300?text=Avantis", engineCapacity: "250 куб.см", power: "21 л.с.", rating: 4.5, reviewsCount: 23 },
-  { id: 6, title: "Kayo T2 MX 250", image: "https://placehold.co/400x300?text=Kayo+T2", engineCapacity: "250 куб.см", power: "20 л.с.", rating: 4.5, reviewsCount: 23 },
-];
+interface EncyclopediaGridProps {
+  motorcycles: Motorcycle[];
+}
 
-export const EncyclopediaGrid = () => {
+export const EncyclopediaGrid = ({ motorcycles }: EncyclopediaGridProps) => {
   return (
-    <Flex vertical gap="large" style={{ padding: '24px 0', maxWidth: 1200, margin: '0 auto' }}>
-      <Breadcrumb
-        items={[
-          { title: 'Главная' },
-          { title: 'Энциклопедия' },
-        ]}
-      />
-
-      <Flex justify="space-between" align="center">
-        <Text strong style={{ fontSize: 16 }}>Найдено: 847 моделей</Text>
-        <Select
-          defaultValue="popular"
-          style={{ width: 180 }}
-          options={[
-            { value: 'popular', label: 'По популярности' },
-            { value: 'price_asc', label: 'Сначала дешевые' },
-            { value: 'price_desc', label: 'Сначала дорогие' },
-          ]}
-        />
-      </Flex>
-
+    <div style={{ maxWidth: 1200, margin: '0 auto', paddingTop: 24 }}>
+      <Title level={2} style={{ marginBottom: 24 }}>Каталог эндуро</Title>
+      
       <Row gutter={[24, 24]}>
-        {MOCK_DATA.map((bike) => (
-          <Col xs={24} sm={12} md={8} key={bike.id}>
-            <MotorcycleCard {...bike} />
+        {motorcycles.map((moto) => (
+          <Col xs={24} sm={12} md={8} lg={6} key={moto.ID}>
+            <Link href={`/motorcycle/${moto.ID}`} style={{ textDecoration: 'none' }}>
+              <Card
+                hoverable
+                cover={
+                  <div style={{ height: 200, backgroundColor: '#f0f0f0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Text type="secondary">{moto.Image || "Нет фото"}</Text>
+                  </div>
+                }
+                styles={{ body: { padding: 16 } }}
+              >
+                <Tag color="orange" style={{ marginBottom: 8 }}>
+                  {moto.Brand.Name}
+                </Tag>
+                
+                <Title level={5} style={{ marginTop: 0, marginBottom: 16 }} ellipsis>
+                  {moto.ModelName}
+                </Title>
+
+                <Flex justify="space-between" align="center">
+                  <Text type="secondary" style={{ fontSize: 12 }}>Средняя цена:</Text>
+                  <Text strong style={{ color: 'var(--enduro-color-primary)' }}>
+                    {moto.PriceAnalytics?.Average ? `${moto.PriceAnalytics.Average.toLocaleString('ru-RU')} ₽` : "Нет данных"}
+                  </Text>
+                </Flex>
+              </Card>
+            </Link>
           </Col>
         ))}
       </Row>
-    </Flex>
+    </div>
   );
 };
