@@ -24,4 +24,4 @@ Thumbs.db
 .env.test.local
 .env.production.local
 
-docs/
+backend/uploads/
