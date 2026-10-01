@@ -1,6 +1,6 @@
 "use client"
 
-import { Checkbox, Typography, Divider, Space } from "antd";
+import { Checkbox, Typography, Divider, Flex } from "antd";
 import { useRouter, useSearchParams } from "next/navigation";
 import type { Brand } from "@/shared/ui/types";
 import { useEffect, useState } from "react";
@@ -53,7 +53,7 @@ export const CatalogSidebar = ({ brands }: CatalogSidebarProps) => {
       <Divider style={{ margin: '12px 0' }} />
       
       <Title level={5} style={{ marginBottom: 16 }}>Бренд</Title>
-      <Space direction="vertical" style={{ width: '100%', maxHeight: 400, overflowY: 'auto' }}>
+      <Flex vertical gap="small" style={{ width: '100%', maxHeight: 400, overflowY: 'auto' }}>
         {brands.map((b) => (
           <Checkbox 
             key={b.id} 
@@ -63,7 +63,7 @@ export const CatalogSidebar = ({ brands }: CatalogSidebarProps) => {
             {b.name}
           </Checkbox>
         ))}
-      </Space>
+      </Flex>
     </div>
   );
 };
