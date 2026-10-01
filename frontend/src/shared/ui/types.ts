@@ -1,15 +1,43 @@
 export interface Motorcycle {
-  ID: number;
-  ModelName: string;
-  Image: string;
-  Status: string;
-  Category: string;
-  Brand: {
-    Name: string;
+  id: number;
+  title: string;
+  image: string;
+  status: string;
+  category: string;
+  brand: {
+    id: number;
+    name: string;
+    country: string;
   };
-  PriceAnalytics?: {
-    Average: number;
-    Min: number;
-    Max: number;
+  price?: {
+    average: number;
+    min: number;
+    max: number;
+    currency: string;
+    minSourceName: string;
+    minSourceUrl: string;
+    maxSourceName: string;
+  };
+  specs?: {
+    capacity: number;
+    type: string;
+    power: number;
+    engine: string;
+    cooling: string;
+    fuelSupply: string;
+    fuelTank: number;
+    frontSuspension: string;
+    rearSuspension: string;
+    starter: string;
+    frontBrakes: string;
+    rearBrakes: string;
+    wheels: string;
+    dimensions: string;
+    wheelbase: number;
+    seatHeight: number;
+    weight: number;
+    clearance: number;
+    clutch: string;
+    pts: boolean;
   };
 }

@@ -1,64 +1,62 @@
-"use client"
 import { Breadcrumb, Flex } from "antd";
+import Link from "next/link";
 import { MotorcycleOverview } from "@/widgets/motorcycle-overview";
 import { MotorcycleSpecs } from "@/widgets/motorcycle-specs";
-
-import type { SpecsProps } from "@/widgets/motorcycle-specs/ui/motorcycle-specs";
-
-// В будущем данные будут загружаться сервером и передаваться через пропсы
-const MOCK_BIKE_DETAILS = {
-  title: "Эндуро 150",
-  image: "https://placehold.co/800x600?text=Enduro+150",
-  price: "120 000 ₽",
-  status: "В наличии",
-  specs: {
-    capacity: "150",
-    type: "Эндуро",
-    power: "12",
-    engine: "Одноцилиндровый , 4-тактный Zongshen (ZS161FMJ)",
-    cooling: "Воздушное",
-    fuelSupply: "Карбюратор NIBBI PE26",
-    fuelTank: "10л",
-    frontSuspension: "Телескопическая, перевернутого типа, 860 мм (MNT) , нерегулируемая",
-    rearSuspension: "Моноамортизатор 450 мм (MNT) (нерегулируемый)",
-    starter: "Электрический и кикстартер",
-    frontBrakes: "Дисковый гидравлический",
-    rearBrakes: "Дисковый гидравлический",
-    wheels: "19/16",
-    dimensions: "2010×810×1155",
-    wheelbase: "1 435",
-    seatHeight: "950",
-    weight: "116",
-    clearance: "250",
-    clutch: "Механическое",
-    pts: "НЕТ"
-  } as SpecsProps
-};
+import type { Motorcycle } from "@/shared/ui/types";
 
 interface MotorcyclePageProps {
-  motorcycleId: string;
+  motorcycle: Motorcycle;
 }
 
-export const MotorcyclePage = ({ motorcycleId }: MotorcyclePageProps) => {
+export const MotorcyclePage = ({ motorcycle }: MotorcyclePageProps) => {
+  // Форматируем цену
+  const priceStr = motorcycle.price?.average 
+    ? `${motorcycle.price.average.toLocaleString('ru-RU')} ₽` 
+    : "Нет данных";
+
+  // Маппинг данных
+  const mappedSpecs = motorcycle.specs ? {
+    capacity: String(motorcycle.specs.capacity || "-"),
+    type: motorcycle.specs.type || "-",
+    power: String(motorcycle.specs.power || "-"),
+    engine: motorcycle.specs.engine || "-",
+    cooling: motorcycle.specs.cooling || "-",
+    fuelSupply: motorcycle.specs.fuelSupply || "-",
+    fuelTank: String(motorcycle.specs.fuelTank || "-"),
+    frontSuspension: motorcycle.specs.frontSuspension || "-",
+    rearSuspension: motorcycle.specs.rearSuspension || "-",
+    starter: motorcycle.specs.starter || "-",
+    frontBrakes: motorcycle.specs.frontBrakes || "-",
+    rearBrakes: motorcycle.specs.rearBrakes || "-",
+    wheels: motorcycle.specs.wheels || "-",
+    dimensions: motorcycle.specs.dimensions || "-",
+    wheelbase: String(motorcycle.specs.wheelbase || "-"),
+    seatHeight: String(motorcycle.specs.seatHeight || "-"),
+    weight: String(motorcycle.specs.weight || "-"),
+    clearance: String(motorcycle.specs.clearance || "-"),
+    clutch: motorcycle.specs.clutch || "-",
+    pts: motorcycle.specs.pts ? "Есть" : "Нет"
+  } : null;
+
   return (
     <Flex vertical style={{ maxWidth: 1200, margin: '0 auto' }}>
       <Breadcrumb
         items={[
-          { title: <a href="/">Главная</a> },
-          { title: <a href="/">Энциклопедия</a> },
-          { title: MOCK_BIKE_DETAILS.title },
+          { title: <Link href="/">Главная</Link> },
+          { title: <Link href="/">Каталог</Link> },
+          { title: motorcycle.title },
         ]}
         style={{ marginBottom: 24 }}
       />
 
       <MotorcycleOverview 
-        title={MOCK_BIKE_DETAILS.title}
-        image={MOCK_BIKE_DETAILS.image}
-        price={MOCK_BIKE_DETAILS.price}
-        status={MOCK_BIKE_DETAILS.status}
+        title={motorcycle.title}
+        image={motorcycle.image || "https://placehold.co/800x600?text=Нет+фото"}
+        price={priceStr}
+        status={motorcycle.status || "В наличии"}
       />
 
-      <MotorcycleSpecs specs={MOCK_BIKE_DETAILS.specs} />
+      {mappedSpecs && <MotorcycleSpecs specs={mappedSpecs} />}
     </Flex>
   );
 };

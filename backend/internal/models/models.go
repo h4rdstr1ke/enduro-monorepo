@@ -7,70 +7,77 @@ import (
 	"gorm.io/gorm"
 )
 
-// Brand представляет производителя мотоциклов (например, KTM, Kayo).[cite: 9]
-type Brand struct {
-	gorm.Model
-	Name        string `gorm:"uniqueIndex;not null"`
-	Country     string
-	Motorcycles []Motorcycle
+// BaseModel заменяет gorm.Model для контроля JSON-тегов
+type BaseModel struct {
+	ID        uint           `gorm:"primarykey" json:"id"`
+	CreatedAt time.Time      `json:"createdAt"`
+	UpdatedAt time.Time      `json:"updatedAt"`
+	DeletedAt gorm.DeletedAt `gorm:"index" json:"-"`
 }
 
-// Motorcycle содержит базовую информацию о конкретной модели мотоцикла.[cite: 9]
-type Motorcycle struct {
-	gorm.Model
-	BrandID   uint `gorm:"index;not null"`
-	Brand     Brand
-	ModelName string `gorm:"not null"`
-	Image     string
-	Status    string
-	Category  string
+// Brand представляет производителя мотоциклов (например, KTM, Kayo).
+type Brand struct {
+	BaseModel
+	Name        string       `gorm:"uniqueIndex;not null" json:"name"`
+	Country     string       `json:"country"`
+	Motorcycles []Motorcycle `json:"motorcycles,omitempty"`
+}
 
-	Spec           Spec
-	PriceAnalytics PriceAnalytics `gorm:"foreignKey:MotorcycleID"`
+// Motorcycle содержит базовую информацию о конкретной модели мотоцикла.
+type Motorcycle struct {
+	BaseModel
+	BrandID   uint   `gorm:"index;not null" json:"brandId"`
+	Brand     Brand  `json:"brand"`
+	ModelName string `gorm:"not null" json:"title"`
+	Image     string `json:"image"`
+	Status    string `json:"status"`
+	Category  string `json:"category"`
+
+	Spec           Spec           `json:"specs"`
+	PriceAnalytics PriceAnalytics `gorm:"foreignKey:MotorcycleID" json:"price"`
 }
 
 // PriceAnalytics содержит агрегированные данные о стоимости
 type PriceAnalytics struct {
-	gorm.Model
-	MotorcycleID  uint `gorm:"uniqueIndex;not null"`
-	Average       float64
-	Min           float64
-	Max           float64
-	MinSourceName string
-	MinSourceUrl  string
-	MaxSourceName string
-	Currency      string
-	ParsedAt      time.Time
+	BaseModel
+	MotorcycleID  uint      `gorm:"uniqueIndex;not null" json:"motorcycleId"`
+	Average       float64   `json:"average"`
+	Min           float64   `json:"min"`
+	Max           float64   `json:"max"`
+	MinSourceName string    `json:"minSourceName"`
+	MinSourceUrl  string    `json:"minSourceUrl"`
+	MaxSourceName string    `json:"maxSourceName"`
+	Currency      string    `json:"currency"`
+	ParsedAt      time.Time `json:"parsedAt"`
 }
 
-// Spec содержит подробные технические характеристики мотоцикла.[cite: 9]
+// Spec содержит подробные технические характеристики мотоцикла.
 // Типы данных (int, float64) оставлены для удобства поиска и фильтрации в БД.
-// При передаче на фронтенд будем форматировать их в строки.
 type Spec struct {
-	gorm.Model
-	MotorcycleID uint `gorm:"uniqueIndex;not null"`
+	BaseModel
+	MotorcycleID uint `gorm:"uniqueIndex;not null" json:"motorcycleId"`
 
-	Displacement int
-	Type         string
-	Power        float64
-	Weight       int
-	HasPTS       bool
+	Displacement int     `json:"capacity"`
+	Type         string  `json:"type"`
+	Power        float64 `json:"power"`
+	Weight       int     `json:"weight"`
+	HasPTS       bool    `json:"pts"`
 
-	Engine       string
-	Cooling      string
-	FuelSystem   string
-	TankCapacity int
-	Starter      string
-	Clutch       string
+	Engine       string `json:"engine"`
+	Cooling      string `json:"cooling"`
+	FuelSystem   string `json:"fuelSupply"`
+	TankCapacity int    `json:"fuelTank"`
+	Starter      string `json:"starter"`
+	Clutch       string `json:"clutch"`
 
-	FrontSusp  string
-	RearSusp   string
-	FrontBrake string
-	RearBrake  string
-	Wheels     string
+	FrontSusp  string `json:"frontSuspension"`
+	RearSusp   string `json:"rearSuspension"`
+	FrontBrake string `json:"frontBrakes"`
+	RearBrake  string `json:"rearBrakes"`
+	Wheels     string `json:"wheels"`
 
-	Dimensions string
-	Wheelbase  int
-	SeatHeight int
-	Clearance  int
+	Dimensions string `json:"dimensions"`
+	Wheelbase  int    `json:"wheelbase"`
+	SeatHeight int    `json:"seatHeight"`
+	Clearance  int    `json:"clearance"`
 }

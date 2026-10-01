@@ -17,29 +17,29 @@ export const EncyclopediaGrid = ({ motorcycles }: EncyclopediaGridProps) => {
       
       <Row gutter={[24, 24]}>
         {motorcycles.map((moto) => (
-          <Col xs={24} sm={12} md={8} lg={6} key={moto.ID}>
-            <Link href={`/motorcycle/${moto.ID}`} style={{ textDecoration: 'none' }}>
+          <Col xs={24} sm={12} md={8} lg={6} key={moto.id}>
+            <Link href={`/motorcycle/${moto.id}`} style={{ textDecoration: 'none' }}>
               <Card
                 hoverable
                 cover={
                   <div style={{ height: 200, backgroundColor: '#f0f0f0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Text type="secondary">{moto.Image || "Нет фото"}</Text>
+                    <Text type="secondary">{moto.image || "Нет фото"}</Text>
                   </div>
                 }
                 styles={{ body: { padding: 16 } }}
               >
                 <Tag color="orange" style={{ marginBottom: 8 }}>
-                  {moto.Brand.Name}
+                  {moto.brand.name}
                 </Tag>
                 
                 <Title level={5} style={{ marginTop: 0, marginBottom: 16 }} ellipsis>
-                  {moto.ModelName}
+                  {moto.title}
                 </Title>
 
                 <Flex justify="space-between" align="center">
                   <Text type="secondary" style={{ fontSize: 12 }}>Средняя цена:</Text>
                   <Text strong style={{ color: 'var(--enduro-color-primary)' }}>
-                    {moto.PriceAnalytics?.Average ? `${moto.PriceAnalytics.Average.toLocaleString('ru-RU')} ₽` : "Нет данных"}
+                    {moto.price?.average ? `${moto.price.average.toLocaleString('ru-RU')} ₽` : "Нет данных"}
                   </Text>
                 </Flex>
               </Card>
