@@ -1,14 +1,22 @@
 import { EncyclopediaGrid } from "@/widgets/encyclopedia-grid";
-import { Typography } from "antd";
-import type { Motorcycle } from "@/shared/ui/types"; 
+import { CatalogSidebar } from "@/widgets/catalog-sidebar";
+import { Row, Col } from "antd";
+import type { Motorcycle, Brand } from "@/shared/ui/types"; 
 
-export default async function Home() {
+interface SearchParams {
+  brands?: string;
+}
 
-  const res = await fetch(process.env.API_URL + "/motorcycles", {
-    cache: "no-store", 
-  });
+export default async function Home({ searchParams }: { searchParams: SearchParams }) {
+  const query = searchParams.brands ? `?brands=${searchParams.brands}` : "";
   
-  if (!res.ok) {
+  // Параллельно загружаем бренды и мотоциклы
+  const [motoRes, brandRes] = await Promise.all([
+    fetch(process.env.API_URL + `/motorcycles${query}`, { cache: "no-store" }),
+    fetch(process.env.API_URL + "/brands", { cache: "no-store" })
+  ]);
+  
+  if (!motoRes.ok || !brandRes.ok) {
     return (
       <main style={{ padding: '24px', textAlign: 'center' }}>
         <h2>Ошибка загрузки каталога</h2>
@@ -16,11 +24,19 @@ export default async function Home() {
     );
   }
 
-  const motorcycles: Motorcycle[] = await res.json();
+  const motorcycles: Motorcycle[] = await motoRes.json();
+  const brands: Brand[] = await brandRes.json();
 
   return (
-    <main style={{ padding: '0 24px' }}>
-      <EncyclopediaGrid motorcycles={motorcycles} />
+    <main style={{ padding: '24px' }}>
+      <Row gutter={[24, 24]}>
+        <Col xs={24} md={6} lg={5}>
+          <CatalogSidebar brands={brands} />
+        </Col>
+        <Col xs={24} md={18} lg={19}>
+          <EncyclopediaGrid motorcycles={motorcycles} />
+        </Col>
+      </Row>
     </main>
   );
 }
