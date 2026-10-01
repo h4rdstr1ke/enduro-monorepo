@@ -1,0 +1,2924 @@
+{
+	"values": [
+		{
+			"name": " Fekon",
+			"value": "17348811"
+		},
+		{
+			"name": "79Bike",
+			"value": "22386050"
+		},
+		{
+			"name": "ABM (X-moto)",
+			"value": "17072738"
+		},
+		{
+			"name": "ABS",
+			"value": "22545420"
+		},
+		{
+			"name": "AJ1",
+			"value": "22282674"
+		},
+		{
+			"name": "AJP",
+			"value": "17072793"
+		},
+		{
+			"value": "17072824",
+			"name": "AJS"
+		},
+		{
+			"name": "ALMOTOR",
+			"value": "22387881"
+		},
+		{
+			"name": "AMAN",
+			"value": "22582838"
+		},
+		{
+			"name": "AODES",
+			"value": "22407829"
+		},
+		{
+			"name": "APEKS MOTO",
+			"value": "22809375"
+		},
+		{
+			"value": "17073183",
+			"name": "ATK"
+		},
+		{
+			"name": "ATV-TY",
+			"value": "18594551"
+		},
+		{
+			"name": "AVM",
+			"value": "17471621"
+		},
+		{
+			"name": "AXON",
+			"value": "22698242"
+		},
+		{
+			"name": "Aermacchi",
+			"value": "17072778"
+		},
+		{
+			"value": "17080516",
+			"name": "Agiax"
+		},
+		{
+			"name": "Aima",
+			"value": "22345552"
+		},
+		{
+			"name": "Ajerra",
+			"value": "18768588"
+		},
+		{
+			"name": "Alfer",
+			"value": "17072857"
+		},
+		{
+			"name": "Almaxmoto",
+			"value": "22497214"
+		},
+		{
+			"name": "Alpha",
+			"value": "17304393"
+		},
+		{
+			"name": "Alphamoto",
+			"value": "17349800"
+		},
+		{
+			"name": "Alrendo",
+			"value": "17347229"
+		},
+		{
+			"name": "Amazonas",
+			"value": "17072856"
+		},
+		{
+			"name": "American Eagle",
+			"value": "17072871"
+		},
+		{
+			"name": "American IronHorse",
+			"value": "17072880"
+		},
+		{
+			"name": "Antelopower",
+			"value": "22572409"
+		},
+		{
+			"name": "Antrike",
+			"value": "18423200"
+		},
+		{
+			"name": "Apache",
+			"value": "17304954"
+		},
+		{
+			"name": "Apaq",
+			"value": "18573303"
+		},
+		{
+			"name": "Apollino",
+			"value": "22015071"
+		},
+		{
+			"name": "Apollo",
+			"value": "17072904"
+		},
+		{
+			"name": "Aprilia",
+			"value": "17072926"
+		},
+		{
+			"name": "Arch Motorcycle",
+			"value": "17073091"
+		},
+		{
+			"name": "Arctic Leopard",
+			"value": "18411974"
+		},
+		{
+			"name": "Ardie",
+			"value": "17073093"
+		},
+		{
+			"name": "Ares Moto",
+			"value": "22649632"
+		},
+		{
+			"name": "Ariel",
+			"value": "17073117"
+		},
+		{
+			"name": "Arlen Ness",
+			"value": "17073132"
+		},
+		{
+			"name": "ArmadA",
+			"value": "17073144"
+		},
+		{
+			"name": "Asia wing",
+			"value": "17080512"
+		},
+		{
+			"name": "Asiawing",
+			"value": "17073161"
+		},
+		{
+			"name": "Aston Martin x Brough Superior",
+			"value": "22190902"
+		},
+		{
+			"name": "Ataki",
+			"value": "17073178"
+		},
+		{
+			"name": "AtlantMoto",
+			"value": "22131239"
+		},
+		{
+			"name": "Atom",
+			"value": "22057564"
+		},
+		{
+			"name": "Avantis",
+			"value": "17073210"
+		},
+		{
+			"value": "22707561",
+			"name": "Avinton"
+		},
+		{
+			"name": "Azel",
+			"value": "17073248"
+		},
+		{
+			"name": "BGKTR",
+			"value": "22698202"
+		},
+		{
+			"name": "BGM",
+			"value": "22799237"
+		},
+		{
+			"name": "BHJ",
+			"value": "22590869"
+		},
+		{
+			"name": "BHR",
+			"value": "17333243"
+		},
+		{
+			"value": "22588987",
+			"name": "BKGTR"
+		},
+		{
+			"name": "BMC Choppers",
+			"value": "17073674"
+		},
+		{
+			"name": "BMP",
+			"value": "22630486"
+		},
+		{
+			"name": "BMW",
+			"value": "17073695"
+		},
+		{
+			"name": "BNK",
+			"value": "22575395"
+		},
+		{
+			"name": "BORK",
+			"value": "22425213"
+		},
+		{
+			"name": "BRP",
+			"value": "17074002"
+		},
+		{
+			"name": "BRZ",
+			"value": "17074015"
+		},
+		{
+			"name": "BSA",
+			"value": "17074033"
+		},
+		{
+			"name": "BSE",
+			"value": "17074067"
+		},
+		{
+			"name": "BST",
+			"value": "22594334"
+		},
+		{
+			"name": "BSTABO",
+			"value": "22616148"
+		},
+		{
+			"name": "BTM",
+			"value": "22437503"
+		},
+		{
+			"name": "BUTCH",
+			"value": "17347226"
+		},
+		{
+			"name": "BYD",
+			"value": "18550105"
+		},
+		{
+			"name": "Baige",
+			"value": "22381068"
+		},
+		{
+			"name": "Bajaj",
+			"value": "17073263"
+		},
+		{
+			"name": "Baltmotors",
+			"value": "17073311"
+		},
+		{
+			"value": "17073344",
+			"name": "BamX"
+		},
+		{
+			"name": "Baodiao",
+			"value": "17305876"
+		},
+		{
+			"name": "Bars",
+			"value": "17073359"
+		},
+		{
+			"name": "Bekmoto",
+			"value": "22294632"
+		},
+		{
+			"name": "Benda",
+			"value": "18571676"
+		},
+		{
+			"name": "Benelli",
+			"value": "17073357"
+		},
+		{
+			"name": "Berenberg",
+			"value": "22629896"
+		},
+		{
+			"name": "Besuda",
+			"value": "22424128"
+		},
+		{
+			"name": "Beta",
+			"value": "17073480"
+		},
+		{
+			"value": "17160268",
+			"name": "Bianchi"
+		},
+		{
+			"name": "Bifei",
+			"value": "17073539"
+		},
+		{
+			"name": "Big Bear Choppers",
+			"value": "17073538"
+		},
+		{
+			"name": "Big Dog Motorcycles",
+			"value": "17073601"
+		},
+		{
+			"name": "Bimota",
+			"value": "17073618"
+		},
+		{
+			"name": "Bison",
+			"value": "17080398"
+		},
+		{
+			"name": "Bizon",
+			"value": "22610027"
+		},
+		{
+			"name": "Blata",
+			"value": "17073655"
+		},
+		{
+			"name": "Boom Trikes",
+			"value": "17073851"
+		},
+		{
+			"value": "17073893",
+			"name": "Borile"
+		},
+		{
+			"name": "Boss Hoss",
+			"value": "17073916"
+		},
+		{
+			"name": "Bourgets Bike Works",
+			"value": "17073945"
+		},
+		{
+			"name": "Brabus",
+			"value": "17073966"
+		},
+		{
+			"name": "Brammo",
+			"value": "17073967"
+		},
+		{
+			"name": "Briar streetfire",
+			"value": "17348805"
+		},
+		{
+			"name": "Brixton",
+			"value": "22008282"
+		},
+		{
+			"name": "Brough Superior",
+			"value": "17073983"
+		},
+		{
+			"name": "BucciMoto",
+			"value": "17074154"
+		},
+		{
+			"name": "Buell",
+			"value": "17074174"
+		},
+		{
+			"name": "Bull",
+			"value": "17492267"
+		},
+		{
+			"value": "17074211",
+			"name": "Bultaco"
+		},
+		{
+			"name": "C.MOTO",
+			"value": "22316132"
+		},
+		{
+			"name": "CAIDI",
+			"value": "22590890"
+		},
+		{
+			"name": "CCM",
+			"value": "17074331"
+		},
+		{
+			"name": "CFMOTO",
+			"value": "17074384"
+		},
+		{
+			"value": "22029149",
+			"name": "CG"
+		},
+		{
+			"value": "17074423",
+			"name": "CH Racing"
+		},
+		{
+			"name": "CHITUMA",
+			"value": "17992524"
+		},
+		{
+			"name": "CINECO",
+			"value": "22597996"
+		},
+		{
+			"name": "CPI",
+			"value": "17074514"
+		},
+		{
+			"name": "CR&S",
+			"value": "17074528"
+		},
+		{
+			"name": "CRZ",
+			"value": "17074552"
+		},
+		{
+			"name": "CSR",
+			"value": "17074565"
+		},
+		{
+			"value": "17074595",
+			"name": "CZ"
+		},
+		{
+			"name": "Cagiva",
+			"value": "17074243"
+		},
+		{
+			"name": "Campagna",
+			"value": "17074317"
+		},
+		{
+			"name": "Caofen",
+			"value": "18621466"
+		},
+		{
+			"name": "Carver",
+			"value": "17074330"
+		},
+		{
+			"name": "Centurion",
+			"value": "17074373"
+		},
+		{
+			"name": "Champ",
+			"value": "17327238"
+		},
+		{
+			"name": "Chang-Jiang",
+			"value": "17074443"
+		},
+		{
+			"value": "18548702",
+			"name": "Charger bike"
+		},
+		{
+			"value": "22163090",
+			"name": "ChebuR"
+		},
+		{
+			"value": "17333229",
+			"name": "China Motors"
+		},
+		{
+			"name": "Chiyao Yongkang",
+			"value": "22549710"
+		},
+		{
+			"name": "Cobra",
+			"value": "17074460"
+		},
+		{
+			"name": "Confederate",
+			"value": "17074483"
+		},
+		{
+			"name": "Coolster",
+			"value": "17074502"
+		},
+		{
+			"value": "17074539",
+			"name": "Cronus"
+		},
+		{
+			"name": "Cross",
+			"value": "18413726"
+		},
+		{
+			"name": "Curtiss",
+			"value": "17074588"
+		},
+		{
+			"name": "Custom-Wolf",
+			"value": "17326205"
+		},
+		{
+			"name": "Cyclone",
+			"value": "18724052"
+		},
+		{
+			"name": "D-RAD",
+			"value": "18594125"
+		},
+		{
+			"name": "DESTRA",
+			"value": "22590893"
+		},
+		{
+			"value": "22426942",
+			"name": "DIR-BIKE"
+		},
+		{
+			"value": "22708516",
+			"name": "DKD"
+		},
+		{
+			"name": "DKW",
+			"value": "17074683"
+		},
+		{
+			"name": "DM Telai",
+			"value": "17074687"
+		},
+		{
+			"value": "17074612",
+			"name": "Daelim"
+		},
+		{
+			"name": "Dajiang",
+			"value": "22276514"
+		},
+		{
+			"name": "Darex",
+			"value": "18804284"
+		},
+		{
+			"name": "Davinci Motor",
+			"value": "22130767"
+		},
+		{
+			"name": "Dayang",
+			"value": "22602414"
+		},
+		{
+			"name": "Dayun",
+			"value": "22004269"
+		},
+		{
+			"name": "Defant",
+			"value": "17074627"
+		},
+		{
+			"name": "Defiant",
+			"value": "18672166"
+		},
+		{
+			"name": "Deller",
+			"value": "17074638"
+		},
+		{
+			"name": "Denago",
+			"value": "22594813"
+		},
+		{
+			"name": "Denzel",
+			"value": "17326175"
+		},
+		{
+			"name": "Derbi",
+			"value": "17074637"
+		},
+		{
+			"name": "Desert Raven",
+			"value": "17074651"
+		},
+		{
+			"name": "Desvitt",
+			"value": "22526586"
+		},
+		{
+			"name": "Dimen",
+			"value": "22130792"
+		},
+		{
+			"name": "Dirt Bike",
+			"value": "22584201"
+		},
+		{
+			"name": "Dirtmax",
+			"value": "17074663"
+		},
+		{
+			"name": "Dodge",
+			"value": "17074686"
+		},
+		{
+			"name": "Dongma",
+			"value": "22590896"
+		},
+		{
+			"name": "DraXter",
+			"value": "18566926"
+		},
+		{
+			"name": "Ducati",
+			"value": "17074698"
+		},
+		{
+			"name": "E RIDE",
+			"value": "22315719"
+		},
+		{
+			"name": "E-motions",
+			"value": "22163084"
+		},
+		{
+			"name": "E.V.A.",
+			"value": "17074881"
+		},
+		{
+			"name": "EAR",
+			"value": "22633337"
+		},
+		{
+			"name": "EBR",
+			"value": "17074882"
+		},
+		{
+			"name": "ECO",
+			"value": "17325970"
+		},
+		{
+			"name": "ECO ELECTRO",
+			"value": "22035006"
+		},
+		{
+			"name": "ELBIKE",
+			"value": "22590909"
+		},
+		{
+			"name": "ELECTRONmotors",
+			"value": "22628186"
+		},
+		{
+			"name": "EM",
+			"value": "22610162"
+		},
+		{
+			"name": "EMAX",
+			"value": "17074920"
+		},
+		{
+			"value": "22582856",
+			"name": "ERMAK"
+		},
+		{
+			"name": "ERT",
+			"value": "22482605"
+		},
+		{
+			"name": "EX-MOTO",
+			"value": "22521305"
+		},
+		{
+			"value": "17074894",
+			"name": "EcoGet"
+		},
+		{
+			"name": "Ecosse",
+			"value": "17074893"
+		},
+		{
+			"value": "17314410",
+			"name": "Ekonik"
+		},
+		{
+			"name": "El Moto",
+			"value": "18592700"
+		},
+		{
+			"name": "Electric Motion",
+			"value": "17314440"
+		},
+		{
+			"name": "Electripet",
+			"value": "22498262"
+		},
+		{
+			"value": "22269203",
+			"name": "Electro Supreme Moto"
+		},
+		{
+			"value": "17327998",
+			"name": "Electron"
+		},
+		{
+			"name": "Elmoto",
+			"value": "22073977"
+		},
+		{
+			"name": "Elwinn",
+			"value": "22093546"
+		},
+		{
+			"name": "Emanba",
+			"value": "22660034"
+		},
+		{
+			"name": "Energica",
+			"value": "17074921"
+		},
+		{
+			"name": "Eurotex",
+			"value": "17074919"
+		},
+		{
+			"name": "ExDrive",
+			"value": "18575282"
+		},
+		{
+			"name": "Excelsior-Henderson",
+			"value": "17074946"
+		},
+		{
+			"name": "Expert-Moto",
+			"value": "17327221"
+		},
+		{
+			"name": "FAIDET",
+			"value": "22334505"
+		},
+		{
+			"name": "FIDET",
+			"value": "22615265"
+		},
+		{
+			"name": "FIREGUARD",
+			"value": "17305623"
+		},
+		{
+			"value": "17352885",
+			"name": "FMC"
+		},
+		{
+			"name": "FRATELI",
+			"value": "18590957"
+		},
+		{
+			"name": "FSMOTO",
+			"value": "22584524"
+		},
+		{
+			"name": "FST",
+			"value": "17550277"
+		},
+		{
+			"name": "FURIOUS",
+			"value": "22289870"
+		},
+		{
+			"name": "FXMOTO",
+			"value": "17160140"
+		},
+		{
+			"value": "17074944",
+			"name": "Factory Bike"
+		},
+		{
+			"name": "Falcon",
+			"value": "17074962"
+		},
+		{
+			"name": "Fantic",
+			"value": "17074957"
+		},
+		{
+			"name": "Felo",
+			"value": "22660466"
+		},
+		{
+			"name": "Fidelis",
+			"value": "22590918"
+		},
+		{
+			"name": "Fidelis Et Fortis",
+			"value": "17326185"
+		},
+		{
+			"name": "Fighter",
+			"value": "17075010"
+		},
+		{
+			"name": "Fine Custom Mechanics",
+			"value": "17075021"
+		},
+		{
+			"name": "Fischer",
+			"value": "17075053"
+		},
+		{
+			"name": "Flyrite Choppers",
+			"value": "17075058"
+		},
+		{
+			"name": "Forsage",
+			"value": "17075064"
+		},
+		{
+			"name": "Forte",
+			"value": "18670835"
+		},
+		{
+			"name": "Fosti",
+			"value": "17075099"
+		},
+		{
+			"name": "Foxboy",
+			"value": "22070853"
+		},
+		{
+			"value": "17075109",
+			"name": "Fuego"
+		},
+		{
+			"value": "17075115",
+			"name": "Full Crew"
+		},
+		{
+			"name": "Fust Moto",
+			"value": "22575376"
+		},
+		{
+			"value": "17075122",
+			"name": "Futong"
+		},
+		{
+			"name": "G&G",
+			"value": "17075126"
+		},
+		{
+			"name": "G-max",
+			"value": "17075121"
+		},
+		{
+			"name": "G2R",
+			"value": "17304336"
+		},
+		{
+			"name": "GARO",
+			"value": "22385571"
+		},
+		{
+			"name": "GAS GAS",
+			"value": "17075131"
+		},
+		{
+			"name": "GG",
+			"value": "22591853"
+		},
+		{
+			"name": "GMMOTO",
+			"value": "22610196"
+		},
+		{
+			"value": "22596552",
+			"name": "GODJI"
+		},
+		{
+			"name": "GPX",
+			"value": "22597910"
+		},
+		{
+			"name": "GR",
+			"value": "17075228"
+		},
+		{
+			"value": "17313587",
+			"name": "GR-X"
+		},
+		{
+			"name": "GRCmoto",
+			"value": "18413357"
+		},
+		{
+			"value": "22589715",
+			"name": "GROX"
+		},
+		{
+			"value": "17575531",
+			"name": "GS Motors"
+		},
+		{
+			"name": "GT",
+			"value": "22582824"
+		},
+		{
+			"name": "GT Racer Max",
+			"value": "22576423"
+		},
+		{
+			"name": "GTO",
+			"value": "22189272"
+		},
+		{
+			"name": "GTX",
+			"value": "22378439"
+		},
+		{
+			"name": "GX Moto",
+			"value": "18329958"
+		},
+		{
+			"name": "GYRO JET",
+			"value": "22056861"
+		},
+		{
+			"name": "Gaokin",
+			"value": "18744385"
+		},
+		{
+			"name": "Generic",
+			"value": "17075159"
+		},
+		{
+			"name": "Geon",
+			"value": "17333140"
+		},
+		{
+			"name": "Ghezzi-Brian",
+			"value": "17075181"
+		},
+		{
+			"name": "Gilera",
+			"value": "17075205"
+		},
+		{
+			"name": "Gixxer",
+			"value": "18581320"
+		},
+		{
+			"name": "Gladiator",
+			"value": "22574016"
+		},
+		{
+			"name": "Golden Tomorrow",
+			"value": "17326182"
+		},
+		{
+			"value": "22383744",
+			"name": "Gowow"
+		},
+		{
+			"name": "GreenCamel",
+			"value": "17080388"
+		},
+		{
+			"name": "Groza",
+			"value": "18768135"
+		},
+		{
+			"name": "Gryphon",
+			"value": "17075240"
+		},
+		{
+			"name": "Guangjue",
+			"value": "22014740"
+		},
+		{
+			"name": "Guowei",
+			"value": "17333222"
+		},
+		{
+			"name": "Guruenduro",
+			"value": "22391350"
+		},
+		{
+			"name": "HANSHA",
+			"value": "22586859"
+		},
+		{
+			"name": "HEZZO",
+			"value": "22590931"
+		},
+		{
+			"name": "HUAIHAI",
+			"value": "18736484"
+		},
+		{
+			"value": "22574856",
+			"name": "Hadar"
+		},
+		{
+			"name": "Hammer",
+			"value": "22420691"
+		},
+		{
+			"name": "Hanbird",
+			"value": "22302426"
+		},
+		{
+			"name": "Hanway",
+			"value": "17075239"
+		},
+		{
+			"value": "22484195",
+			"name": "Hanxue Hanma"
+		},
+		{
+			"name": "Harley-Davidson",
+			"value": "17075254"
+		},
+		{
+			"name": "Hartford",
+			"value": "17075392"
+		},
+		{
+			"name": "Hasky",
+			"value": "17075404"
+		},
+		{
+			"name": "Hb Co",
+			"value": "18619624"
+		},
+		{
+			"name": "Headbanger",
+			"value": "17075422"
+		},
+		{
+			"name": "Hengjian",
+			"value": "18615313"
+		},
+		{
+			"name": "Hercules",
+			"value": "17075437"
+		},
+		{
+			"name": "Highper",
+			"value": "22514169"
+		},
+		{
+			"name": "Hitway",
+			"value": "22677189"
+		},
+		{
+			"name": "Honda",
+			"value": "17075453"
+		},
+		{
+			"name": "Honling",
+			"value": "17075807"
+		},
+		{
+			"name": "Horex",
+			"value": "17075805"
+		},
+		{
+			"name": "Horizon",
+			"value": "22040842"
+		},
+		{
+			"name": "Horwin",
+			"value": "17346676"
+		},
+		{
+			"name": "Huanpeng",
+			"value": "18629385"
+		},
+		{
+			"value": "22057319",
+			"name": "Huojian"
+		},
+		{
+			"name": "Husaberg",
+			"value": "17075817"
+		},
+		{
+			"value": "17075857",
+			"name": "Husqvarna"
+		},
+		{
+			"name": "Hyosung",
+			"value": "17076011"
+		},
+		{
+			"name": "IMR",
+			"value": "22389548"
+		},
+		{
+			"name": "IONIC",
+			"value": "22718799"
+		},
+		{
+			"value": "17076108",
+			"name": "IRBIS"
+		},
+		{
+			"name": "IRON FOX",
+			"value": "22585796"
+		},
+		{
+			"name": "Ikingi",
+			"value": "22405890"
+		},
+		{
+			"name": "Independence",
+			"value": "17076066"
+		},
+		{
+			"name": "Indian",
+			"value": "17076065"
+		},
+		{
+			"name": "Infiniqi",
+			"value": "22575403"
+		},
+		{
+			"name": "Intruder",
+			"value": "22610257"
+		},
+		{
+			"name": "Iride",
+			"value": "18384646"
+		},
+		{
+			"name": "Italian Volt",
+			"value": "17076153"
+		},
+		{
+			"name": "JEBE",
+			"value": "22418144"
+		},
+		{
+			"name": "JEDI MOTOR",
+			"value": "22411473"
+		},
+		{
+			"name": "JETSON",
+			"value": "22522930"
+		},
+		{
+			"name": "JHL",
+			"value": "18329598"
+		},
+		{
+			"name": "JHLofr",
+			"value": "22610286"
+		},
+		{
+			"name": "JMC",
+			"value": "17076227"
+		},
+		{
+			"value": "17315339",
+			"name": "JMX"
+		},
+		{
+			"name": "JUMPER",
+			"value": "17080440"
+		},
+		{
+			"name": "James",
+			"value": "18720037"
+		},
+		{
+			"name": "Janus Motorcycles",
+			"value": "22069306"
+		},
+		{
+			"value": "17076152",
+			"name": "Jawa"
+		},
+		{
+			"name": "Jawetta",
+			"value": "22809301"
+		},
+		{
+			"name": "Jelmaia",
+			"value": "22600610"
+		},
+		{
+			"name": "Jialing",
+			"value": "17327215"
+		},
+		{
+			"name": "Jianshe",
+			"value": "17076211"
+		},
+		{
+			"name": "Jinyi",
+			"value": "17347033"
+		},
+		{
+			"name": "Johnny Pag",
+			"value": "17076250"
+		},
+		{
+			"name": "Jose",
+			"value": "22590938"
+		},
+		{
+			"name": "K2R",
+			"value": "18559645"
+		},
+		{
+			"value": "17465019",
+			"name": "KAMAX"
+		},
+		{
+			"value": "17304618",
+			"name": "KATAR"
+		},
+		{
+			"name": "KAYO",
+			"value": "17076518"
+		},
+		{
+			"name": "KC Creations",
+			"value": "17076571"
+		},
+		{
+			"value": "17314425",
+			"name": "KSM"
+		},
+		{
+			"name": "KTM",
+			"value": "17076633"
+		},
+		{
+			"name": "KTR",
+			"value": "22376454"
+		},
+		{
+			"name": "KTW",
+			"value": "22335827"
+		},
+		{
+			"name": "KXD",
+			"value": "17076779"
+		},
+		{
+			"value": "22013722",
+			"name": "Kaisa"
+		},
+		{
+			"value": "17314243",
+			"name": "Kaitong Motors"
+		},
+		{
+			"name": "Kamiza",
+			"value": "22809271"
+		},
+		{
+			"name": "Kandela",
+			"value": "22276505"
+		},
+		{
+			"name": "Kangda",
+			"value": "17076275"
+		},
+		{
+			"value": "17076287",
+			"name": "Kanuni"
+		},
+		{
+			"name": "Kawasaki",
+			"value": "17076286"
+		},
+		{
+			"name": "Kaxa Motos",
+			"value": "17076495"
+		},
+		{
+			"name": "Kayro",
+			"value": "22064162"
+		},
+		{
+			"name": "Keeway",
+			"value": "17076567"
+		},
+		{
+			"name": "Kews",
+			"value": "18621745"
+		},
+		{
+			"name": "Kington",
+			"value": "17349627"
+		},
+		{
+			"name": "Kinlon Motors",
+			"value": "17076590"
+		},
+		{
+			"name": "Kinroad",
+			"value": "22351848"
+		},
+		{
+			"name": "Koshine",
+			"value": "17076601"
+		},
+		{
+			"name": "Kove",
+			"value": "18432650"
+		},
+		{
+			"name": "Kovi",
+			"value": "22028921"
+		},
+		{
+			"name": "Kragor",
+			"value": "22447654"
+		},
+		{
+			"name": "Kramit",
+			"value": "17076613"
+		},
+		{
+			"name": "Kreidler",
+			"value": "17076617"
+		},
+		{
+			"name": "Kuberg",
+			"value": "17327277"
+		},
+		{
+			"name": "Kugoo",
+			"value": "22412615"
+		},
+		{
+			"name": "Kymco",
+			"value": "17076799"
+		},
+		{
+			"name": "LINKO",
+			"value": "22610339"
+		},
+		{
+			"name": "LION",
+			"value": "22642711"
+		},
+		{
+			"name": "LITUS",
+			"value": "17184349"
+		},
+		{
+			"name": "LS-CO",
+			"value": "22594662"
+		},
+		{
+			"name": "LUQI",
+			"value": "18567133"
+		},
+		{
+			"name": "Laverda",
+			"value": "17076814"
+		},
+		{
+			"name": "Legend",
+			"value": "17076851"
+		},
+		{
+			"name": "Lem",
+			"value": "17076862"
+		},
+		{
+			"value": "17076866",
+			"name": "Lifan"
+		},
+		{
+			"name": "Lijiang",
+			"value": "22072792"
+		},
+		{
+			"name": "Liqimoto",
+			"value": "22448570"
+		},
+		{
+			"name": "Loncin",
+			"value": "17076892"
+		},
+		{
+			"name": "Loncin Voge",
+			"value": "17079430"
+		},
+		{
+			"name": "Longzu",
+			"value": "22590983"
+		},
+		{
+			"name": "Longzu Star",
+			"value": "18549324"
+		},
+		{
+			"name": "Lotus",
+			"value": "22453809"
+		},
+		{
+			"value": "22264279",
+			"name": "Lucky Duck"
+		},
+		{
+			"name": "MARS",
+			"value": "22411909"
+		},
+		{
+			"name": "MARSHAL",
+			"value": "22595643"
+		},
+		{
+			"name": "MBK",
+			"value": "17076960"
+		},
+		{
+			"name": "MBS",
+			"value": "17076972"
+		},
+		{
+			"name": "MGMoto",
+			"value": "17076991"
+		},
+		{
+			"name": "MIVIMOTO",
+			"value": "22411157"
+		},
+		{
+			"name": "MM",
+			"value": "17160157"
+		},
+		{
+			"name": "MMZ",
+			"value": "22388429"
+		},
+		{
+			"name": "MOTO73",
+			"value": "18629378"
+		},
+		{
+			"name": "MRZ",
+			"value": "22027890"
+		},
+		{
+			"name": "MTM Moto",
+			"value": "17478619"
+		},
+		{
+			"name": "MTT",
+			"value": "17077449"
+		},
+		{
+			"name": "MV Agusta",
+			"value": "17077461"
+		},
+		{
+			"name": "MWM",
+			"value": "22333593"
+		},
+		{
+			"value": "22616408",
+			"name": "MXR"
+		},
+		{
+			"name": "MZ",
+			"value": "17077532"
+		},
+		{
+			"name": "Magni",
+			"value": "17076918"
+		},
+		{
+			"name": "Maico",
+			"value": "17076915"
+		},
+		{
+			"name": "Maiwei",
+			"value": "22333905"
+		},
+		{
+			"name": "Malaguti",
+			"value": "17076930"
+		},
+		{
+			"name": "Malanca",
+			"value": "17076949"
+		},
+		{
+			"name": "Matchless",
+			"value": "17076961"
+		},
+		{
+			"name": "Mecatecno",
+			"value": "22015929"
+		},
+		{
+			"name": "Megelli",
+			"value": "17076971"
+		},
+		{
+			"name": "Meiduo",
+			"value": "18619577"
+		},
+		{
+			"value": "22582923",
+			"name": "Meizida"
+		},
+		{
+			"name": "Metrakit",
+			"value": "17076992"
+		},
+		{
+			"name": "Midual",
+			"value": "17077006"
+		},
+		{
+			"name": "Mikilon",
+			"value": "17077004"
+		},
+		{
+			"name": "Millennium",
+			"value": "17305901"
+		},
+		{
+			"name": "Minff",
+			"value": "22009116"
+		},
+		{
+			"name": "Minsk",
+			"value": "17077016"
+		},
+		{
+			"name": "Miura",
+			"value": "22583877"
+		},
+		{
+			"name": "MoTesla",
+			"value": "17347060"
+		},
+		{
+			"name": "Moken",
+			"value": "22596243"
+		},
+		{
+			"name": "Molotov",
+			"value": "22067768"
+		},
+		{
+			"name": "Mondial",
+			"value": "17077081"
+		},
+		{
+			"value": "17077091",
+			"name": "Montesa"
+		},
+		{
+			"name": "Mota Motor",
+			"value": "22376657"
+		},
+		{
+			"name": "Motax",
+			"value": "17077088"
+		},
+		{
+			"name": "Moto Guzzi",
+			"value": "17077112"
+		},
+		{
+			"name": "Moto Morini",
+			"value": "17077192"
+		},
+		{
+			"name": "Motobi",
+			"value": "17077269"
+		},
+		{
+			"name": "Motofino",
+			"value": "22031601"
+		},
+		{
+			"name": "Motoland",
+			"value": "17077279"
+		},
+		{
+			"name": "Motorhead",
+			"value": "22031259"
+		},
+		{
+			"name": "Motorhispania",
+			"value": "17077440"
+		},
+		{
+			"name": "Mototrade",
+			"value": "22378318"
+		},
+		{
+			"value": "17077450",
+			"name": "Mowgli"
+		},
+		{
+			"value": "22060680",
+			"name": "Musstang"
+		},
+		{
+			"name": "NCR",
+			"value": "17077559"
+		},
+		{
+			"name": "NEO",
+			"value": "22583150"
+		},
+		{
+			"name": "NFX",
+			"value": "22406603"
+		},
+		{
+			"value": "18629942",
+			"name": "NSU"
+		},
+		{
+			"name": "Nanfang",
+			"value": "17306386"
+		},
+		{
+			"name": "Naxeon",
+			"value": "22422742"
+		},
+		{
+			"name": "Neander",
+			"value": "17077557"
+		},
+		{
+			"name": "Neighborhood home",
+			"value": "18672461"
+		},
+		{
+			"name": "Nexus",
+			"value": "17077570"
+		},
+		{
+			"name": "Nicot",
+			"value": "17646317"
+		},
+		{
+			"name": "Nihao Motor",
+			"value": "22392511"
+		},
+		{
+			"value": "22427701",
+			"name": "Ninefox"
+		},
+		{
+			"name": "Ninja",
+			"value": "22073974"
+		},
+		{
+			"name": "Nipponia",
+			"value": "17077587"
+		},
+		{
+			"name": "Nitro",
+			"value": "17077586"
+		},
+		{
+			"name": "Niu",
+			"value": "22060915"
+		},
+		{
+			"name": "Nort",
+			"value": "17326202"
+		},
+		{
+			"name": "Norton",
+			"value": "17077585"
+		},
+		{
+			"name": "OEM",
+			"value": "22035133"
+		},
+		{
+			"value": "22585438",
+			"name": "ORBIS"
+		},
+		{
+			"name": "OSET",
+			"value": "17077674"
+		},
+		{
+			"name": "OSSA",
+			"value": "17077675"
+		},
+		{
+			"name": "OXO",
+			"value": "22004250"
+		},
+		{
+			"name": "Ohvale",
+			"value": "17077599"
+		},
+		{
+			"name": "Omaks",
+			"value": "17077610"
+		},
+		{
+			"name": "OneMoto",
+			"value": "22637631"
+		},
+		{
+			"name": "Orange County Choppers",
+			"value": "17077629"
+		},
+		{
+			"name": "Orion",
+			"value": "17077640"
+		},
+		{
+			"name": "Osaka",
+			"value": "22419046"
+		},
+		{
+			"name": "Ouke",
+			"value": "22596410"
+		},
+		{
+			"value": "17077738",
+			"name": "PCW"
+		},
+		{
+			"name": "PFMOTO",
+			"value": "22678842"
+		},
+		{
+			"name": "PITONMOTO",
+			"value": "18739846"
+		},
+		{
+			"name": "PRB",
+			"value": "22445698"
+		},
+		{
+			"name": "PROCIDA",
+			"value": "18791692"
+		},
+		{
+			"name": "PROMAX",
+			"value": "17077805"
+		},
+		{
+			"name": "PUCH",
+			"value": "17077833"
+		},
+		{
+			"name": "PWR Racing",
+			"value": "17077832"
+		},
+		{
+			"value": "17077673",
+			"name": "Pannonia"
+		},
+		{
+			"name": "Patron",
+			"value": "17077696"
+		},
+		{
+			"name": "Paxus",
+			"value": "18764376"
+		},
+		{
+			"name": "Pegas",
+			"value": "17160259"
+		},
+		{
+			"name": "Peugeot",
+			"value": "17077752"
+		},
+		{
+			"name": "Phoenix Trike Works",
+			"value": "17077739"
+		},
+		{
+			"value": "17077741",
+			"name": "Pioneer"
+		},
+		{
+			"name": "Pitrace",
+			"value": "17077742"
+		},
+		{
+			"name": "Pitster Pro",
+			"value": "17077766"
+		},
+		{
+			"name": "Polaris",
+			"value": "17077778"
+		},
+		{
+			"name": "Polini",
+			"value": "17077779"
+		},
+		{
+			"name": "Pony Motors",
+			"value": "18569693"
+		},
+		{
+			"name": "Praga",
+			"value": "17077790"
+		},
+		{
+			"value": "17077791",
+			"name": "Progasi"
+		},
+		{
+			"value": "18575279",
+			"name": "QJMOTOR"
+		},
+		{
+			"name": "QJiang",
+			"value": "17327210"
+		},
+		{
+			"name": "Qingqi",
+			"value": "17184345"
+		},
+		{
+			"name": "Qingqi Suzuki",
+			"value": "22602403"
+		},
+		{
+			"name": "Qlink",
+			"value": "17077845"
+		},
+		{
+			"name": "RATO",
+			"value": "22594742"
+		},
+		{
+			"value": "22398623",
+			"name": "REM"
+		},
+		{
+			"name": "RERODE",
+			"value": "22423053"
+		},
+		{
+			"name": "RFN",
+			"value": "18792628"
+		},
+		{
+			"name": "RIDE",
+			"value": "22610462"
+		},
+		{
+			"name": "RIFT",
+			"value": "22678726"
+		},
+		{
+			"name": "RIVERTOUS",
+			"value": "22610465"
+		},
+		{
+			"name": "RKT",
+			"value": "22574019"
+		},
+		{
+			"name": "ROMANIAC",
+			"value": "22425577"
+		},
+		{
+			"name": "ROYO",
+			"value": "22574588"
+		},
+		{
+			"name": "RRF",
+			"value": "22461975"
+		},
+		{
+			"name": "Racer",
+			"value": "17077854"
+		},
+		{
+			"name": "Rajdoot",
+			"value": "17077929"
+		},
+		{
+			"name": "Rapira",
+			"value": "17080441"
+		},
+		{
+			"name": "Rawrr",
+			"value": "22059693"
+		},
+		{
+			"value": "17305848",
+			"name": "Razor"
+		},
+		{
+			"name": "Regal Raptor",
+			"value": "17077926"
+		},
+		{
+			"name": "Reggy",
+			"value": "17077970"
+		},
+		{
+			"name": "Regulmoto",
+			"value": "17077977"
+		},
+		{
+			"value": "22575383",
+			"name": "Revesso"
+		},
+		{
+			"name": "Rewaco",
+			"value": "17078046"
+		},
+		{
+			"name": "Rezon",
+			"value": "22130773"
+		},
+		{
+			"name": "Rhino",
+			"value": "17078073"
+		},
+		{
+			"name": "Richard Mille x Brough Superior",
+			"value": "22593253"
+		},
+		{
+			"name": "Riders-MX",
+			"value": "18487872"
+		},
+		{
+			"name": "Ridley Auto",
+			"value": "22383253"
+		},
+		{
+			"name": "Rieju",
+			"value": "17078072"
+		},
+		{
+			"name": "Rizee",
+			"value": "17647749"
+		},
+		{
+			"name": "Rmoto",
+			"value": "17078135"
+		},
+		{
+			"name": "Rocket",
+			"value": "18571376"
+		},
+		{
+			"name": "Rockot",
+			"value": "17078155"
+		},
+		{
+			"name": "Rockwild",
+			"value": "22417574"
+		},
+		{
+			"name": "Roehr",
+			"value": "17078198"
+		},
+		{
+			"name": "Rokon",
+			"value": "17078210"
+		},
+		{
+			"name": "Roliz",
+			"value": "17078209"
+		},
+		{
+			"name": "Rox",
+			"value": "18486889"
+		},
+		{
+			"name": "Roxon",
+			"value": "17078234"
+		},
+		{
+			"name": "Royal Enfield",
+			"value": "17078233"
+		},
+		{
+			"name": "Rucker Performance",
+			"value": "17078264"
+		},
+		{
+			"name": "Rutrike",
+			"value": "17078275"
+		},
+		{
+			"name": "S2 Motors",
+			"value": "17078319"
+		},
+		{
+			"value": "22638081",
+			"name": "SAN MOTORS"
+		},
+		{
+			"value": "22374872",
+			"name": "SEM"
+		},
+		{
+			"name": "SH Moto",
+			"value": "17575520"
+		},
+		{
+			"value": "22651621",
+			"name": "SIDЕСАR"
+		},
+		{
+			"name": "SM-PARTS",
+			"value": "18583161"
+		},
+		{
+			"name": "SMR Racing",
+			"value": "22599612"
+		},
+		{
+			"name": "SPR",
+			"value": "22369706"
+		},
+		{
+			"value": "17487886",
+			"name": "SPRMOTORS"
+		},
+		{
+			"name": "SSM",
+			"value": "22575365"
+		},
+		{
+			"name": "SSSR",
+			"value": "17080399"
+		},
+		{
+			"name": "STN",
+			"value": "22343233"
+		},
+		{
+			"name": "SWM",
+			"value": "17078966"
+		},
+		{
+			"name": "SYING",
+			"value": "22633838"
+		},
+		{
+			"name": "SYMOTOS",
+			"value": "17990701"
+		},
+		{
+			"value": "22397614",
+			"name": "SYX Moto"
+		},
+		{
+			"name": "Sachs",
+			"value": "17078339"
+		},
+		{
+			"value": "17078359",
+			"name": "Sagitta"
+		},
+		{
+			"value": "22708762",
+			"name": "Sagwa"
+		},
+		{
+			"name": "Saige",
+			"value": "22077088"
+		},
+		{
+			"name": "Saimo",
+			"value": "22391042"
+		},
+		{
+			"name": "Sanchez",
+			"value": "22058780"
+		},
+		{
+			"name": "Sanglas",
+			"value": "17078364"
+		},
+		{
+			"name": "Saxon",
+			"value": "17078376"
+		},
+		{
+			"name": "ScanMoto",
+			"value": "22585127"
+		},
+		{
+			"name": "Scorpa",
+			"value": "17078391"
+		},
+		{
+			"name": "Scout",
+			"value": "22594873"
+		},
+		{
+			"name": "Segway",
+			"value": "22778250"
+		},
+		{
+			"name": "Senke",
+			"value": "17080439"
+		},
+		{
+			"name": "Shansu",
+			"value": "22407458"
+		},
+		{
+			"value": "17145247",
+			"name": "Shanyang"
+		},
+		{
+			"name": "Sharmax",
+			"value": "17080370"
+		},
+		{
+			"value": "22586400",
+			"name": "Shawloong"
+		},
+		{
+			"value": "22163087",
+			"name": "Shenda"
+		},
+		{
+			"name": "Shenying",
+			"value": "18664796"
+		},
+		{
+			"name": "Sherco",
+			"value": "17078421"
+		},
+		{
+			"name": "Shineray",
+			"value": "17080463"
+		},
+		{
+			"name": "Shock",
+			"value": "22583596"
+		},
+		{
+			"name": "Shorner",
+			"value": "22590075"
+		},
+		{
+			"value": "22419904",
+			"name": "Shot"
+		},
+		{
+			"value": "17078436",
+			"name": "Siamoto"
+		},
+		{
+			"value": "17305868",
+			"name": "Simargl Elektro"
+		},
+		{
+			"name": "Simson",
+			"value": "17078448"
+		},
+		{
+			"name": "Skygo",
+			"value": "17078460"
+		},
+		{
+			"name": "Skyline",
+			"value": "17478612"
+		},
+		{
+			"name": "Skyteam",
+			"value": "17078457"
+		},
+		{
+			"value": "17078549",
+			"name": "Sonik"
+		},
+		{
+			"name": "Sonlink",
+			"value": "22634866"
+		},
+		{
+			"name": "Soul",
+			"value": "17903764"
+		},
+		{
+			"name": "Spark",
+			"value": "17995176"
+		},
+		{
+			"name": "Sport Spirit",
+			"value": "22574022"
+		},
+		{
+			"name": "Spyracing",
+			"value": "22599606"
+		},
+		{
+			"name": "Stark Future",
+			"value": "18740729"
+		},
+		{
+			"name": "Stels",
+			"value": "17078561"
+		},
+		{
+			"value": "17078601",
+			"name": "Stingray"
+		},
+		{
+			"name": "Sukida",
+			"value": "17333364"
+		},
+		{
+			"value": "22571020",
+			"name": "Sumo"
+		},
+		{
+			"name": "Sunday Motors",
+			"value": "17304129"
+		},
+		{
+			"name": "Super Soco",
+			"value": "17078612"
+		},
+		{
+			"name": "Sur-ron",
+			"value": "17078626"
+		},
+		{
+			"name": "Suzuki",
+			"value": "17078625"
+		},
+		{
+			"name": "Swift",
+			"value": "17078955"
+		},
+		{
+			"name": "Sycmcc",
+			"value": "22062934"
+		},
+		{
+			"name": "Sym",
+			"value": "17078997"
+		},
+		{
+			"name": "TANT",
+			"value": "22698503"
+		},
+		{
+			"name": "TAO MOTOR",
+			"value": "22055425"
+		},
+		{
+			"name": "TECHNIC",
+			"value": "22571546"
+		},
+		{
+			"name": "TEZZA",
+			"value": "22574981"
+		},
+		{
+			"name": "TM Racing",
+			"value": "17079047"
+		},
+		{
+			"name": "TMBK",
+			"value": "22093078"
+		},
+		{
+			"value": "17079198",
+			"name": "TRRS"
+		},
+		{
+			"name": "TRX",
+			"value": "18774667"
+		},
+		{
+			"name": "TVS",
+			"value": "17079209"
+		},
+		{
+			"name": "TYEMOTO",
+			"value": "22389694"
+		},
+		{
+			"name": "TZR",
+			"value": "22573742"
+		},
+		{
+			"name": "Tachilla",
+			"value": "17664087"
+		},
+		{
+			"name": "Tacita",
+			"value": "17079009"
+		},
+		{
+			"value": "17470534",
+			"name": "TaiLG"
+		},
+		{
+			"value": "17326178",
+			"name": "Talaria"
+		},
+		{
+			"name": "Tank Sports",
+			"value": "17079007"
+		},
+		{
+			"name": "Telufu",
+			"value": "22718988"
+		},
+		{
+			"name": "Thor",
+			"value": "22610518"
+		},
+		{
+			"name": "TiREX",
+			"value": "22278591"
+		},
+		{
+			"name": "Time",
+			"value": "22407720"
+		},
+		{
+			"name": "Timpton Motorcycles",
+			"value": "22588453"
+		},
+		{
+			"name": "Tinbot",
+			"value": "22586253"
+		},
+		{
+			"name": "Tinbot (Kollter)",
+			"value": "17079022"
+		},
+		{
+			"name": "Titan",
+			"value": "17079034"
+		},
+		{
+			"name": "Titanat",
+			"value": "17354512"
+		},
+		{
+			"value": "17079067",
+			"name": "Tomos"
+		},
+		{
+			"value": "17079077",
+			"name": "Tomoto"
+		},
+		{
+			"name": "Torrot",
+			"value": "17346805"
+		},
+		{
+			"name": "Trailmaster",
+			"value": "18592561"
+		},
+		{
+			"name": "Travertson",
+			"value": "17079076"
+		},
+		{
+			"name": "Triumph",
+			"value": "17079087"
+		},
+		{
+			"name": "Troll",
+			"value": "17079200"
+		},
+		{
+			"name": "Tromox",
+			"value": "17352864"
+		},
+		{
+			"name": "Turrut",
+			"value": "22575115"
+		},
+		{
+			"name": "U-Shan",
+			"value": "22574145"
+		},
+		{
+			"name": "ULAR",
+			"value": "22389418"
+		},
+		{
+			"name": "UM",
+			"value": "17079224"
+		},
+		{
+			"name": "UMX",
+			"value": "22585122"
+		},
+		{
+			"name": "Universal",
+			"value": "17304147"
+		},
+		{
+			"name": "Universal Alpha",
+			"value": "17080494"
+		},
+		{
+			"name": "Universal Colt",
+			"value": "17304549"
+		},
+		{
+			"value": "17079227",
+			"name": "Upbeat (ABT)"
+		},
+		{
+			"name": "VMC",
+			"value": "22063113"
+		},
+		{
+			"name": "VOR",
+			"value": "17079457"
+		},
+		{
+			"name": "VORO",
+			"value": "22618307"
+		},
+		{
+			"name": "VTB",
+			"value": "22129114"
+		},
+		{
+			"name": "Valtinsu",
+			"value": "22596660"
+		},
+		{
+			"name": "Van Veen",
+			"value": "17079240"
+		},
+		{
+			"name": "Vanderhall",
+			"value": "22005096"
+		},
+		{
+			"name": "Velimotor",
+			"value": "22130733"
+		},
+		{
+			"name": "Velocifero",
+			"value": "18775371"
+		},
+		{
+			"name": "Vento",
+			"value": "17079237"
+		},
+		{
+			"name": "Vertemati",
+			"value": "17079289"
+		},
+		{
+			"name": "Vertigo",
+			"value": "17079316"
+		},
+		{
+			"name": "Victoria",
+			"value": "18484543"
+		},
+		{
+			"value": "17079327",
+			"name": "Victory"
+		},
+		{
+			"name": "Vinto",
+			"value": "22013964"
+		},
+		{
+			"name": "Viper",
+			"value": "17079395"
+		},
+		{
+			"name": "Virus",
+			"value": "17079396"
+		},
+		{
+			"name": "Voge",
+			"value": "17079419"
+		},
+		{
+			"value": "17079440",
+			"name": "Von Dutch"
+		},
+		{
+			"value": "17079455",
+			"name": "Voxan"
+		},
+		{
+			"name": "Vyrus",
+			"value": "17079470"
+		},
+		{
+			"name": "WUXI",
+			"value": "17354486"
+		},
+		{
+			"name": "WYS",
+			"value": "22677184"
+		},
+		{
+			"name": "Wakan",
+			"value": "17079482"
+		},
+		{
+			"name": "Wanderer",
+			"value": "17079495"
+		},
+		{
+			"name": "Wanderer Werke",
+			"value": "17352889"
+		},
+		{
+			"name": "Wanqiang",
+			"value": "17174348"
+		},
+		{
+			"name": "Wels",
+			"value": "17079494"
+		},
+		{
+			"name": "Wenbox",
+			"value": "22649629"
+		},
+		{
+			"name": "White Siberia",
+			"value": "17079536"
+		},
+		{
+			"name": "Winner",
+			"value": "18615302"
+		},
+		{
+			"name": "Wolong",
+			"value": "22654785"
+		},
+		{
+			"value": "17468361",
+			"name": "World Motors"
+		},
+		{
+			"name": "Worldscooter",
+			"value": "22407114"
+		},
+		{
+			"name": "Wuyang",
+			"value": "17482416"
+		},
+		{
+			"name": "X RIDE",
+			"value": "22660667"
+		},
+		{
+			"name": "X-Motos",
+			"value": "22515176"
+		},
+		{
+			"name": "X-RIDE",
+			"value": "22809217"
+		},
+		{
+			"name": "X-Treme",
+			"value": "22549078"
+		},
+		{
+			"name": "XAS",
+			"value": "22419042"
+		},
+		{
+			"name": "XGJao",
+			"value": "17993660"
+		},
+		{
+			"name": "XGZ",
+			"value": "18794767"
+		},
+		{
+			"name": "XINLING",
+			"value": "18620265"
+		},
+		{
+			"name": "Xianchu",
+			"value": "22586394"
+		},
+		{
+			"name": "Xiaoai",
+			"value": "22403450"
+		},
+		{
+			"name": "XingYue",
+			"value": "17079550"
+		},
+		{
+			"name": "Xingfu",
+			"value": "17079535"
+		},
+		{
+			"name": "Xinguizun",
+			"value": "17554505"
+		},
+		{
+			"name": "Xispa",
+			"value": "17079549"
+		},
+		{
+			"name": "Xmotos",
+			"value": "17079563"
+		},
+		{
+			"name": "Y-VOLT",
+			"value": "22594924"
+		},
+		{
+			"name": "YAHUIT",
+			"value": "22638737"
+		},
+		{
+			"name": "YAQI",
+			"value": "22393759"
+		},
+		{
+			"name": "YCF",
+			"value": "17079995"
+		},
+		{
+			"name": "YIRON",
+			"value": "22610579"
+		},
+		{
+			"name": "YIZHILING",
+			"value": "22364354"
+		},
+		{
+			"name": "YPS",
+			"value": "22321625"
+		},
+		{
+			"name": "YZM",
+			"value": "22582862"
+		},
+		{
+			"value": "22012413",
+			"name": "Yacota"
+		},
+		{
+			"name": "Yadea",
+			"value": "22130738"
+		},
+		{
+			"name": "Yamaha",
+			"value": "17079575"
+		},
+		{
+			"name": "Yamasaki",
+			"value": "17079960"
+		},
+		{
+			"name": "Yangtze",
+			"value": "17079984"
+		},
+		{
+			"name": "Yinxiang",
+			"value": "17080038"
+		},
+		{
+			"name": "Yongkang Sun-Vehicle",
+			"value": "22059955"
+		},
+		{
+			"name": "Yuanda",
+			"value": "17347069"
+		},
+		{
+			"name": "Yuanxiang",
+			"value": "22380716"
+		},
+		{
+			"name": "ZIP Motors",
+			"value": "17080061"
+		},
+		{
+			"name": "ZM Moto",
+			"value": "18424964"
+		},
+		{
+			"name": "ZOR",
+			"value": "22068752"
+		},
+		{
+			"name": "ZRX",
+			"value": "22704094"
+		},
+		{
+			"name": "ZTOT",
+			"value": "22537714"
+		},
+		{
+			"name": "ZXMOTO",
+			"value": "22466096"
+		},
+		{
+			"name": "Zabel",
+			"value": "17160273"
+		},
+		{
+			"name": "Zero",
+			"value": "17080037"
+		},
+		{
+			"name": "Zhejiang",
+			"value": "22416482"
+		},
+		{
+			"name": "Zhenhua",
+			"value": "17468143"
+		},
+		{
+			"name": "Zongshen",
+			"value": "17080064"
+		},
+		{
+			"value": "17080087",
+			"name": "Zontes"
+		},
+		{
+			"name": "Zundapp",
+			"value": "17080088"
+		},
+		{
+			"name": "Zuum",
+			"value": "17080107"
+		},
+		{
+			"name": "Zuumav",
+			"value": "17160143"
+		},
+		{
+			"name": "Zweirad-Union",
+			"value": "17080139"
+		},
+		{
+			"name": "eMaxis",
+			"value": "17346669"
+		},
+		{
+			"name": "БУЛАТ-ТЕХ",
+			"value": "22364347"
+		},
+		{
+			"name": "Вездеходер 54",
+			"value": "22709206"
+		},
+		{
+			"name": "Гюрза",
+			"value": "17465129"
+		},
+		{
+			"name": "Днепр",
+			"value": "17080138"
+		},
+		{
+			"name": "Другая",
+			"value": "17305810"
+		},
+		{
+			"name": "ЗиД",
+			"value": "17080157"
+		},
+		{
+			"name": "ИЖ",
+			"value": "17080189"
+		},
+		{
+			"name": "ИжТехМаш",
+			"value": "17080235"
+		},
+		{
+			"name": "Интеграл",
+			"value": "22394592"
+		},
+		{
+			"name": "Ирбит",
+			"value": "17468256"
+		},
+		{
+			"name": "Калашников",
+			"value": "22336660"
+		},
+		{
+			"name": "Киевский мотоциклетный завод",
+			"value": "18724281"
+		},
+		{
+			"name": "Ковровец",
+			"value": "17080256"
+		},
+		{
+			"name": "ЛМЗ",
+			"value": "17325982"
+		},
+		{
+			"name": "Лебедев моторс",
+			"value": "17627390"
+		},
+		{
+			"name": "ММВЗ",
+			"value": "18191321"
+		},
+		{
+			"name": "ММЗ",
+			"value": "17080294"
+		},
+		{
+			"name": "Мотоальфа",
+			"value": "17484474"
+		},
+		{
+			"name": "Мотобаза",
+			"value": "22609934"
+		},
+		{
+			"name": "Мотолидер",
+			"value": "22728963"
+		},
+		{
+			"name": "Мотомир",
+			"value": "22587587"
+		},
+		{
+			"name": "Мототренд",
+			"value": "22735085"
+		},
+		{
+			"name": "ПМЗ",
+			"value": "17080295"
+		},
+		{
+			"name": "РМЗ",
+			"value": "17080293"
+		},
+		{
+			"name": "Рорикс",
+			"value": "22583248"
+		},
+		{
+			"name": "С.МОТО",
+			"value": "17304615"
+		},
+		{
+			"value": "17304651",
+			"name": "СКАУТ"
+		},
+		{
+			"name": "Сибирь",
+			"value": "17478606"
+		},
+		{
+			"name": "СянЧу",
+			"value": "22709591"
+		},
+		{
+			"value": "17080305",
+			"name": "ТМЗ (Туламашзавод)"
+		},
+		{
+			"name": "Термит",
+			"value": "17636367"
+		},
+		{
+			"name": "Тофалар",
+			"value": "22046848"
+		},
+		{
+			"name": "Урал",
+			"value": "17080318"
+		},
+		{
+			"name": "Шмель",
+			"value": "17484577"
+		}
+	]
+}
