@@ -22,8 +22,16 @@ export const EncyclopediaGrid = ({ motorcycles }: EncyclopediaGridProps) => {
               <Card
                 hoverable
                 cover={
-                  <div style={{ height: 200, backgroundColor: '#f0f0f0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Text type="secondary">{moto.image || "Нет фото"}</Text>
+                  <div style={{ height: 220, backgroundColor: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                    {moto.image ? (
+                      <img 
+                        src={`http://localhost:8080${moto.image}`} 
+                        alt={moto.title} 
+                        style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 16 }} 
+                      />
+                    ) : (
+                      <Text type="secondary">Нет фото</Text>
+                    )}
                   </div>
                 }
                 styles={{ body: { padding: 16 } }}

@@ -27,9 +27,9 @@ export const MotorcycleOverview = ({ title, image, price, status }: MotorcycleOv
           minHeight: 400
         }}>
           <img 
-            src={image} 
+            src={image.startsWith('/') ? `http://localhost:8080${image}` : image} 
             alt={title} 
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+            style={{ width: '100%', height: '100%', maxHeight: 500, objectFit: 'contain', padding: 24 }} 
           />
         </div>
       </Col>
