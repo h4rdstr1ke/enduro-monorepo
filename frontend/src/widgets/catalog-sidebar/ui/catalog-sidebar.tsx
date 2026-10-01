@@ -55,13 +55,17 @@ export const CatalogSidebar = ({ brands }: CatalogSidebarProps) => {
       <Title level={5} style={{ marginBottom: 16 }}>Бренд</Title>
       <Flex vertical gap="small" style={{ width: '100%', maxHeight: 400, overflowY: 'auto' }}>
         {brands.map((b) => (
-          <Checkbox 
-            key={b.id} 
-            checked={selectedBrands.includes(b.id)}
-            onChange={(e) => handleBrandChange(b.id, e.target.checked)}
-          >
-            {b.name}
-          </Checkbox>
+          <div key={b.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <Checkbox 
+              checked={selectedBrands.includes(b.id)}
+              onChange={(e) => handleBrandChange(b.id, e.target.checked)}
+            >
+              {b.name}
+            </Checkbox>
+            <Typography.Link href={`/brand/${b.id}`} style={{ fontSize: 12 }}>
+              wiki
+            </Typography.Link>
+          </div>
         ))}
       </Flex>
     </div>
