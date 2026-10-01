@@ -2,13 +2,12 @@ package main
 
 import (
 	"log"
-	"net/http"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 
 	"github.com/h4rdstr1ke/enduro-monorepo/backend/internal/database"
-	"github.com/h4rdstr1ke/enduro-monorepo/backend/internal/models"
+	"github.com/h4rdstr1ke/enduro-monorepo/backend/internal/handlers"
 )
 
 func main() {
@@ -17,6 +16,9 @@ func main() {
 	if err != nil {
 		log.Fatalf("Ошибка подключения к БД: %v", err)
 	}
+
+	// Инициализируем обработчики
+	motoHandler := handlers.NewMotorcycleHandler(db)
 
 	// Инициализируем роутер Gin
 	r := gin.Default()
@@ -27,33 +29,8 @@ func main() {
 	// Группируем роуты
 	v1 := r.Group("/api/v1")
 	{
-		// 1. Эндпоинт для главной страницы (список)
-		v1.GET("/motorcycles", func(c *gin.Context) {
-			var motorcycles []models.Motorcycle
-
-			result := db.Preload("Brand").Preload("PriceAnalytics").Find(&motorcycles)
-
-			if result.Error != nil {
-				c.JSON(http.StatusInternalServerError, gin.H{"error": result.Error.Error()})
-				return
-			}
-			c.JSON(http.StatusOK, motorcycles)
-		})
-
-		// 2. Эндпоинт для страницы конкретного мотоцикла
-		v1.GET("/motorcycles/:id", func(c *gin.Context) {
-			id := c.Param("id")
-			var motorcycle models.Motorcycle
-
-			// Для детальной страницы подтягиваем еще и технические характеристики (Spec)
-			result := db.Preload("Brand").Preload("Spec").Preload("PriceAnalytics").First(&motorcycle, id)
-
-			if result.Error != nil {
-				c.JSON(http.StatusNotFound, gin.H{"error": "Мотоцикл не найден"})
-				return
-			}
-			c.JSON(http.StatusOK, motorcycle)
-		})
+		v1.GET("/motorcycles", motoHandler.GetMotorcycles)
+		v1.GET("/motorcycles/:id", motoHandler.GetMotorcycleByID)
 	}
 
 	log.Println("API сервер запущен на http://localhost:8080")
