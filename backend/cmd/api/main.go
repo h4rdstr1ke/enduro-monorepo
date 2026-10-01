@@ -19,9 +19,13 @@ func main() {
 
 	// Инициализируем обработчики
 	motoHandler := handlers.NewMotorcycleHandler(db)
+	brandHandler := handlers.NewBrandHandler(db)
 
 	// Инициализируем роутер Gin
 	r := gin.Default()
+
+	// Раздача статических картинок
+	r.Static("/uploads", "./uploads")
 
 	// Разрешаем CORS для локальной разработки фронтенда
 	r.Use(cors.Default())
@@ -29,6 +33,7 @@ func main() {
 	// Группируем роуты
 	v1 := r.Group("/api/v1")
 	{
+		v1.GET("/brands", brandHandler.GetBrands)
 		v1.GET("/motorcycles", motoHandler.GetMotorcycles)
 		v1.GET("/motorcycles/:id", motoHandler.GetMotorcycleByID)
 	}
