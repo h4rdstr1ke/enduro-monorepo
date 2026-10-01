@@ -4,7 +4,7 @@ import type { Motorcycle } from "@/shared/ui/types";
 
 export default async function Home() {
 
-  const res = await fetch("http://localhost:8080/api/v1/motorcycles", {
+  const res = await fetch(process.env.API_URL + "/motorcycles", {
     cache: "no-store", 
   });
   
