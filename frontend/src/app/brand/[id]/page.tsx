@@ -1,9 +1,7 @@
-import { Typography, Row, Col, Divider, Breadcrumb } from "antd";
+import { Row, Col, Divider, Breadcrumb } from "antd";
 import { EncyclopediaGrid } from "@/widgets/encyclopedia-grid";
 import type { Brand } from "@/shared/ui/types";
 import Link from "next/link";
-
-const { Title, Paragraph } = Typography;
 
 export default async function BrandPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
@@ -35,17 +33,17 @@ export default async function BrandPage({ params }: { params: Promise<{ id: stri
 
       <Row gutter={[32, 32]}>
         <Col xs={24} md={16}>
-          <Title level={1}>{brand.name}</Title>
-          <Paragraph type="secondary" style={{ fontSize: 16 }}>
+          <h1 style={{ fontSize: 32, marginBottom: 8, marginTop: 0 }}>{brand.name}</h1>
+          <p style={{ fontSize: 16, color: '#888', marginBottom: 24 }}>
             {brand.country || "Страна не указана"}
-          </Paragraph>
+          </p>
 
           {brand.description ? (
             <div dangerouslySetInnerHTML={{ __html: brand.description }} style={{ fontSize: 16, lineHeight: '1.6' }} />
           ) : (
-            <Paragraph style={{ fontSize: 16, color: '#888' }}>
+            <p style={{ fontSize: 16, color: '#888' }}>
               История этого бренда пока не добавлена в нашу энциклопедию.
-            </Paragraph>
+            </p>
           )}
         </Col>
         
@@ -62,12 +60,12 @@ export default async function BrandPage({ params }: { params: Promise<{ id: stri
 
       <Divider style={{ margin: '40px 0' }} />
 
-      <Title level={3} style={{ marginBottom: 24 }}>Модельный ряд {brand.name}</Title>
+      <h2 style={{ fontSize: 24, marginBottom: 24 }}>Модельный ряд {brand.name}</h2>
       
       {brand.motorcycles && brand.motorcycles.length > 0 ? (
         <EncyclopediaGrid motorcycles={brand.motorcycles} />
       ) : (
-        <Paragraph>В базе пока нет мотоциклов этого бренда.</Paragraph>
+        <p>В базе пока нет мотоциклов этого бренда.</p>
       )}
     </main>
   );
