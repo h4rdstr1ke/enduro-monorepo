@@ -5,6 +5,7 @@ package scraper
 import (
 	"log"
 	"regexp"
+	"sort"
 	"strconv"
 	"strings"
 	"sync"
@@ -19,15 +20,32 @@ import (
 // Scraper предоставляет методы для обхода страниц и сохранения данных в БД.
 type Scraper struct {
 	DB           *gorm.DB
-	mu           sync.Mutex // Защищает счетчики при параллельном парсинге
+	BrandsCache  []string // Эталонный список брендов для смарт-матчинга
+	mu           sync.Mutex
 	ItemsFound   int
 	ItemsCreated int
 	ItemsUpdated int
 }
 
-// NewScraper инициализирует новый экземпляр парсера с подключением к базе данных.
+// NewScraper инициализирует новый экземпляр парсера с подключением к БД.
 func NewScraper(db *gorm.DB) *Scraper {
-	return &Scraper{DB: db}
+	var brands []models.Brand
+	db.Find(&brands)
+
+	brandNames := make([]string, 0, len(brands))
+	for _, b := range brands {
+		brandNames = append(brandNames, b.Name)
+	}
+
+	// Сортируем по убыванию длины, чтобы сначала находить "ABM (X-moto)", а потом "ABM"
+	sort.Slice(brandNames, func(i, j int) bool {
+		return len(brandNames[i]) > len(brandNames[j])
+	})
+
+	return &Scraper{
+		DB:          db,
+		BrandsCache: brandNames,
+	}
 }
 
 // Run настраивает коллекторы Colly и запускает процесс сбора данных.
@@ -112,14 +130,16 @@ func (s *Scraper) Run(startURL string) {
 		})
 
 		brandName := "Unknown"
-		for _, w := range strings.Fields(title) {
-			cleanWord := strings.ToUpper(w)
-			if cleanWord == "МОТОЦИКЛ" || cleanWord == "КРОССОВЫЙ" || cleanWord == "ПИТБАЙК" || cleanWord == "ЭНДУРО" {
-				continue
+		titleLower := strings.ToLower(title)
+		for _, b := range s.BrandsCache {
+			if strings.Contains(titleLower, strings.ToLower(b)) {
+				// Опционально: можно добавить проверку на границы слова (Regexp),
+				// но для мотобрендов обычно достаточно прямого вхождения.
+				brandName = b
+				break
 			}
-			brandName = w
-			break
 		}
+		
 		s.saveToDB(brandName, title, imageURL, currentSpec)
 	})
 
