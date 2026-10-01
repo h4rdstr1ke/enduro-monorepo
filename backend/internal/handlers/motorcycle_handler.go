@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"net/http"
+	"strings"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
@@ -17,11 +18,20 @@ func NewMotorcycleHandler(db *gorm.DB) *MotorcycleHandler {
 	return &MotorcycleHandler{DB: db}
 }
 
-// GetMotorcycles возвращает список мотоциклов
+// GetMotorcycles возвращает список мотоциклов с возможностью фильтрации
 func (h *MotorcycleHandler) GetMotorcycles(c *gin.Context) {
 	var motorcycles []models.Motorcycle
 
-	result := h.DB.Preload("Brand").Preload("PriceAnalytics").Find(&motorcycles)
+	query := h.DB.Preload("Brand").Preload("PriceAnalytics")
+
+	// Фильтрация по брендам (например: ?brands=1,2,3)
+	brandIDs := c.Query("brands")
+	if brandIDs != "" {
+		ids := strings.Split(brandIDs, ",")
+		query = query.Where("brand_id IN ?", ids)
+	}
+
+	result := query.Find(&motorcycles)
 
 	if result.Error != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": result.Error.Error()})
