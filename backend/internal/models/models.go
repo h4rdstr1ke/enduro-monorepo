@@ -20,6 +20,8 @@ type Brand struct {
 	BaseModel
 	Name        string       `gorm:"uniqueIndex;not null" json:"name"`
 	Country     string       `json:"country"`
+	Description string       `gorm:"type:text" json:"description"` // История бренда (Энциклопедия)
+	LogoURL     string       `json:"logoUrl"`                      // Ссылка на логотип
 	Motorcycles []Motorcycle `json:"motorcycles,omitempty"`
 }
 
