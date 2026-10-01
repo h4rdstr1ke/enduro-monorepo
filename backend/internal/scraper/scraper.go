@@ -105,7 +105,11 @@ func (s *Scraper) Run(startURL string) {
 			parseSpecProperty(propName, propValue, &currentSpec)
 		})
 
-		s.saveToDB("Unknown", title, currentSpec)
+		brandName := "Unknown"
+		if titleParts := strings.Fields(title); len(titleParts) > 0 {
+			brandName = titleParts[0]
+		}
+		s.saveToDB(brandName, title, currentSpec)
 	})
 
 	log.Println("Запускаем парсер...")
