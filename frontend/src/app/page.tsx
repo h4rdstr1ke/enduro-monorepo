@@ -7,8 +7,9 @@ interface SearchParams {
   brands?: string;
 }
 
-export default async function Home({ searchParams }: { searchParams: SearchParams }) {
-  const query = searchParams.brands ? `?brands=${searchParams.brands}` : "";
+export default async function Home({ searchParams }: { searchParams: Promise<SearchParams> }) {
+  const resolvedSearchParams = await searchParams;
+  const query = resolvedSearchParams.brands ? `?brands=${resolvedSearchParams.brands}` : "";
   
   // Параллельно загружаем бренды и мотоциклы
   const [motoRes, brandRes] = await Promise.all([
