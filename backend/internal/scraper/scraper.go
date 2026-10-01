@@ -83,11 +83,17 @@ func (s *Scraper) Run(startURL string) {
 	})
 
 	// --- 3. ПАРСИНГ КАРТОЧКИ ТОВАРА ---
-	detailCollector.OnHTML("body", func(e *colly.HTMLElement) {
+	detailCollector.OnHTML("html", func(e *colly.HTMLElement) {
 		title := strings.TrimSpace(e.ChildText("h1"))
 		if title == "" {
 			return // Пропуск пустых страниц или заглушек капчи
 		}
+
+		// Парсим главную картинку из OpenGraph
+		imageURL := ""
+		e.ForEach(`meta[property="og:image"]`, func(_ int, el *colly.HTMLElement) {
+			imageURL = el.Attr("content")
+		})
 
 		var currentSpec models.Spec
 		parsedProps := make(map[string]bool)
@@ -106,10 +112,15 @@ func (s *Scraper) Run(startURL string) {
 		})
 
 		brandName := "Unknown"
-		if titleParts := strings.Fields(title); len(titleParts) > 0 {
-			brandName = titleParts[0]
+		for _, w := range strings.Fields(title) {
+			cleanWord := strings.ToUpper(w)
+			if cleanWord == "МОТОЦИКЛ" || cleanWord == "КРОССОВЫЙ" || cleanWord == "ПИТБАЙК" || cleanWord == "ЭНДУРО" {
+				continue
+			}
+			brandName = w
+			break
 		}
-		s.saveToDB(brandName, title, currentSpec)
+		s.saveToDB(brandName, title, imageURL, currentSpec)
 	})
 
 	log.Println("Запускаем парсер...")
@@ -185,7 +196,7 @@ func extractNumber(input string) int {
 }
 
 // saveToDB реализует логику сохранения (upsert) связки Бренд -> Мотоцикл -> Спецификация.
-func (s *Scraper) saveToDB(brandName, modelName string, specs models.Spec) {
+func (s *Scraper) saveToDB(brandName, modelName, imageURL string, specs models.Spec) {
 	if modelName == "" {
 		return
 	}
@@ -194,11 +205,23 @@ func (s *Scraper) saveToDB(brandName, modelName string, specs models.Spec) {
 	s.DB.FirstOrCreate(&brand, models.Brand{Name: brandName})
 
 	var moto models.Motorcycle
-	s.DB.FirstOrCreate(&moto, models.Motorcycle{
-		BrandID:   brand.ID,
-		ModelName: modelName,
-		Category:  "Enduro",
-	})
+	resultMoto := s.DB.Where("model_name = ?", modelName).First(&moto)
+
+	localImagePath := moto.Image
+	if resultMoto.Error != nil && imageURL != "" {
+		// Скачиваем картинку только если мотоцикл новый
+		localImagePath = downloadImage(imageURL, modelName)
+	}
+
+	if resultMoto.Error != nil {
+		moto = models.Motorcycle{
+			BrandID:   brand.ID,
+			ModelName: modelName,
+			Category:  "Enduro",
+			Image:     localImagePath,
+		}
+		s.DB.Create(&moto)
+	}
 
 	specs.MotorcycleID = moto.ID
 
