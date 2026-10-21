@@ -30,3 +30,22 @@ func (h *BrandHandler) GetBrands(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, brands)
 }
+
+// GetBrandByID возвращает бренд по ID (включая его мотоциклы)
+func (h *BrandHandler) GetBrandByID(c *gin.Context) {
+	id := c.Param("id")
+	var brand models.Brand
+
+	result := h.DB.Preload("Motorcycles").First(&brand, id)
+
+	if result.Error != nil {
+		if result.Error == gorm.ErrRecordNotFound {
+			c.JSON(http.StatusNotFound, gin.H{"error": "Бренд не найден"})
+			return
+		}
+		c.JSON(http.StatusInternalServerError, gin.H{"error": result.Error.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, brand)
+}

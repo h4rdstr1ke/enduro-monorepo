@@ -34,6 +34,7 @@ func main() {
 	v1 := r.Group("/api/v1")
 	{
 		v1.GET("/brands", brandHandler.GetBrands)
+		v1.GET("/brands/:id", brandHandler.GetBrandByID)
 		v1.GET("/motorcycles", motoHandler.GetMotorcycles)
 		v1.GET("/motorcycles/:id", motoHandler.GetMotorcycleByID)
 	}
