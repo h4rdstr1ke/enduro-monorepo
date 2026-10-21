@@ -1,17 +1,29 @@
 "use client"
 import { Row, Col, Typography, Button, Flex, Tag } from "antd";
 import { ShoppingCartOutlined, HeartOutlined } from "@ant-design/icons";
+import { CompareButton } from "@/features/compare";
 
 const { Title, Text } = Typography;
 
 interface MotorcycleOverviewProps {
+  id?: number;
   title: string;
   image: string;
   price: string;
   status: string;
+  brandName?: string;
+  rawPrice?: number;
 }
 
-export const MotorcycleOverview = ({ title, image, price, status }: MotorcycleOverviewProps) => {
+export const MotorcycleOverview = ({
+  id,
+  title,
+  image,
+  price,
+  status,
+  brandName,
+  rawPrice,
+}: MotorcycleOverviewProps) => {
   return (
     <Row gutter={[32, 32]} style={{ marginBottom: 40 }}>
       {/* Левая колонка: Изображение */}
@@ -50,10 +62,22 @@ export const MotorcycleOverview = ({ title, image, price, status }: MotorcycleOv
             Отличный выбор для начинающих райдеров. Подходит для поездок по пересеченной местности и лесных троп.
           </Text>
 
-          <Flex gap="middle" style={{ marginTop: 16 }}>
-            <Button type="primary" size="large" icon={<ShoppingCartOutlined />} style={{ flex: 1 }}>
+          <Flex gap="middle" wrap="wrap" style={{ marginTop: 16 }}>
+            <Button type="primary" size="large" icon={<ShoppingCartOutlined />} style={{ flex: 1, minWidth: 160 }}>
               Где купить
             </Button>
+            {id && (
+              <CompareButton
+                size="large"
+                item={{
+                  id,
+                  title,
+                  image,
+                  brandName: brandName || "",
+                  price: rawPrice,
+                }}
+              />
+            )}
             <Button size="large" icon={<HeartOutlined />} />
           </Flex>
         </Flex>

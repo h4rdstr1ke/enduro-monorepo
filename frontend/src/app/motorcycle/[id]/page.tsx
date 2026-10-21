@@ -1,5 +1,4 @@
-import { MotorcyclePage } from "@/pages/motorcycle"; // поправь путь до компонента из шага 2, если нужно
-import { Typography } from "antd";
+import { MotorcyclePage } from "@/views/motorcycle";
 import type { Motorcycle } from "@/shared/ui/types";
 
 export default async function MotorcycleRoute({ params }: { params: Promise<{ id: string }> }) {
@@ -14,7 +13,7 @@ export default async function MotorcycleRoute({ params }: { params: Promise<{ id
   if (!res.ok) {
     return (
       <main style={{ backgroundColor: '#fafafa', minHeight: '100vh', padding: '24px', textAlign: 'center' }}>
-        <Typography.Title level={3}>Мотоцикл не найден</Typography.Title>
+        <h2>Мотоцикл не найден</h2>
       </main>
     );
   }

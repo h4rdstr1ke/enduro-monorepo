@@ -50,10 +50,13 @@ export const MotorcyclePage = ({ motorcycle }: MotorcyclePageProps) => {
       />
 
       <MotorcycleOverview 
+        id={motorcycle.id}
         title={motorcycle.title}
         image={motorcycle.image || "https://placehold.co/800x600?text=Нет+фото"}
         price={priceStr}
         status={motorcycle.status || "В наличии"}
+        brandName={motorcycle.brand?.name}
+        rawPrice={motorcycle.price?.average}
       />
 
       {mappedSpecs && <MotorcycleSpecs specs={mappedSpecs} />}

@@ -18,7 +18,7 @@ export const CatalogSidebar = ({ brands }: CatalogSidebarProps) => {
 
   // Инициализируем стейт из URL
   useEffect(() => {
-    const brandsParam = searchParams.get("brands");
+    const brandsParam = searchParams?.get("brands");
     if (brandsParam) {
       setSelectedBrands(brandsParam.split(",").map(Number));
     } else {
@@ -34,7 +34,7 @@ export const CatalogSidebar = ({ brands }: CatalogSidebarProps) => {
       newBrands = newBrands.filter(id => id !== brandId);
     }
 
-    const current = new URLSearchParams(Array.from(searchParams.entries()));
+    const current = new URLSearchParams(searchParams ? Array.from(searchParams.entries()) : []);
     if (newBrands.length > 0) {
       current.set("brands", newBrands.join(","));
     } else {

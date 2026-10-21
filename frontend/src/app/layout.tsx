@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd"; 
 import { Header } from "@/widgets/header";
+import { CompareProvider, CompareFloatingBar } from "@/features/compare";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -39,12 +40,15 @@ export default function RootLayout({
               },
             }}
           >
-            <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-              <Header />
-              <main style={{ flex: 1, backgroundColor: '#fafafa' }}>
-                {children}
-              </main>
-            </div>
+            <CompareProvider>
+              <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+                <Header />
+                <main style={{ flex: 1, backgroundColor: '#fafafa' }}>
+                  {children}
+                </main>
+                <CompareFloatingBar />
+              </div>
+            </CompareProvider>
           </ConfigProvider>
         </AntdRegistry>
       </body>

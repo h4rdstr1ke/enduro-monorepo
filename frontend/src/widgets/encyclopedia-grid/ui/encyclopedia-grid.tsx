@@ -2,6 +2,7 @@
 
 import { Card, Col, Row, Typography, Tag, Flex } from "antd";
 import Link from "next/link";
+import { CompareButton } from "@/features/compare";
 import type { Motorcycle } from "@/shared/ui/types"; 
 
 const { Title, Text } = Typography;
@@ -22,7 +23,7 @@ export const EncyclopediaGrid = ({ motorcycles }: EncyclopediaGridProps) => {
               <Card
                 hoverable
                 cover={
-                  <div style={{ height: 220, backgroundColor: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                  <div style={{ position: 'relative', height: 220, backgroundColor: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
                     {moto.image ? (
                       <img 
                         src={`http://localhost:8080${moto.image}`} 
@@ -32,6 +33,19 @@ export const EncyclopediaGrid = ({ motorcycles }: EncyclopediaGridProps) => {
                     ) : (
                       <Text type="secondary">Нет фото</Text>
                     )}
+                    <div style={{ position: 'absolute', top: 8, right: 8, zIndex: 2 }}>
+                      <CompareButton
+                        variant="icon-only"
+                        size="small"
+                        item={{
+                          id: moto.id,
+                          title: moto.title,
+                          image: moto.image,
+                          brandName: moto.brand?.name || "",
+                          price: moto.price?.average,
+                        }}
+                      />
+                    </div>
                   </div>
                 }
                 styles={{ body: { padding: 16 } }}

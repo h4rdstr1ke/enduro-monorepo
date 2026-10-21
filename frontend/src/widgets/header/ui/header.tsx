@@ -1,14 +1,17 @@
 "use client";
 
-import { Layout, Typography, Input, Button, Flex } from "antd";
-import { UserOutlined } from "@ant-design/icons";
+import { Layout, Typography, Input, Button, Flex, Badge } from "antd";
+import { UserOutlined, SwapOutlined } from "@ant-design/icons";
 import Link from "next/link"; 
+import { useCompare } from "@/features/compare";
 
 const { Header: AntHeader } = Layout;
 const { Title } = Typography;
 const { Search } = Input;
 
 export const Header = () => {
+  const { items } = useCompare();
+
   return (
     <AntHeader 
       style={{
@@ -43,10 +46,20 @@ export const Header = () => {
           />
         </div>
 
-        {/* Кнопка входа */}
-        <Button size="large" icon={<UserOutlined />}>
-          Войти
-        </Button>
+        {/* Кнопка сравнения и входа */}
+        <Flex align="center" gap="middle">
+          <Link href="/compare">
+            <Badge count={items.length} size="small" offset={[-2, 2]}>
+              <Button size="large" icon={<SwapOutlined />}>
+                Сравнение
+              </Button>
+            </Badge>
+          </Link>
+
+          <Button size="large" icon={<UserOutlined />}>
+            Войти
+          </Button>
+        </Flex>
       </Flex>
     </AntHeader>
   );
