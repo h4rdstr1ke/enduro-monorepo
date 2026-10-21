@@ -22,7 +22,14 @@ func NewMotorcycleHandler(db *gorm.DB) *MotorcycleHandler {
 func (h *MotorcycleHandler) GetMotorcycles(c *gin.Context) {
 	var motorcycles []models.Motorcycle
 
-	query := h.DB.Preload("Brand").Preload("PriceAnalytics")
+	query := h.DB.Preload("Brand").Preload("Spec").Preload("PriceAnalytics")
+
+	// Фильтрация по ID мотоциклов (например: ?ids=1,2,3 для сравнения)
+	motoIDs := c.Query("ids")
+	if motoIDs != "" {
+		ids := strings.Split(motoIDs, ",")
+		query = query.Where("id IN ?", ids)
+	}
 
 	// Фильтрация по брендам (например: ?brands=1,2,3)
 	brandIDs := c.Query("brands")
